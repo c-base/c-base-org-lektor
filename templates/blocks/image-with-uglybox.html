@@ -1,0 +1,7 @@
+<section class="content-block row vertical-center">
+  {% set img = record.attachments.images.get(this.image) %}
+  {% if img %}
+  <img class="margin-right" src="{{ img.thumbnail(64)|url }}" width="64" height="64">
+  {% endif %}
+  <div class="column-grow ugly-box">{{ this.text }}</div>
+</section>

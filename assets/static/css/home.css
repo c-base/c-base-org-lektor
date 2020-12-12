@@ -1,0 +1,199 @@
+.ugly-box {
+  padding: 1em;
+  color: yellow;
+  background-color: black;
+}
+
+.ugly-box p:first-child {
+  margin-top: 0;
+}
+
+.ugly-box p:last-child {
+  margin-bottom: 0;
+}
+
+a.ugly-button {
+  color: black;
+  padding: 0.4em 0.5em;
+  background: yellow;
+  font-size: 1.2em;
+}
+
+.section-headline {
+  font-size: 1.5em;
+  color: #0b1729;
+  border-bottom: 1px solid #46b6ee;
+  margin: 2em 0 1em 0;
+  padding: 0 0 0.3em 0;
+}
+
+.event_name {
+  color: #FF9900;
+}
+
+main {
+  margin-top: calc(var(--logo-top) + var(--logo-height) + 1em /* margin */);
+}
+
+#content-buttons {
+  margin: 3em 0 2em 0;
+}
+
+#content-buttons ul {
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
+
+#content-buttons li {
+  list-style: none;
+}
+
+#links ul {
+  margin: 0;
+  list-style-image: url(../img/link_dark.gif);
+}
+
+#links a:link, #links a:visited {
+  color: #0b1729;
+  text-decoration: none;
+}
+
+#links a:hover, #links a:active {
+  color: #0b1729;
+  text-decoration: underline;
+}
+
+#sponsors {
+  margin: 2em 0 2em 0;
+}
+
+#links {
+  display: flex;
+  flex: 0 1 auto;
+  flex-flow: row wrap;
+}
+
+#links .column {
+  width: 50%;
+}
+
+#links-info2 {
+  order: 2;
+}
+
+#right-side img {
+  display: block;
+  margin: 0 auto;
+}
+
+#tweet-box {
+  margin-top: 2em;
+}
+
+@media screen and (min-width: 64em) {
+  body {
+    background: url(../img/c-base_raumstation.gif) 435px 25px no-repeat, url(../img/planet_base.jpg) no-repeat, url(../img/stars_bg.jpg) no-repeat, #5a7a8e;
+  }
+
+  main {
+    display: flex;
+    flex: 0 1 auto;
+    flex-flow: row wrap;
+    margin: 0;
+  }
+
+  #left-side {
+    margin-top: 240px;
+    width: calc(100% - 20em - 4em);
+  }
+
+  #right-side {
+    width: 20em;
+    margin-left: 4em;
+    margin-top: 150px;
+    margin-bottom: 1em;
+  }
+
+  #right-side .box {
+    border: var(--box-border-width) solid #46b6ee;
+    position: relative;
+    overflow: visible;
+    background-color: rgba(90, 122, 142, 0.3);
+  }
+
+  #right-side .box-content-margin {
+    margin-left: var(--box-content-margin);
+    margin-right: var(--box-content-margin);
+  }
+
+  #right-side .content-block {
+    position: relative;
+  }
+
+  #right-side .content-block h2.section-headline {
+    display: inline-block;
+    font-size: 1em;
+    font-weight: normal;
+    color: #0d0649;
+    background-color: #46b6ee;
+    position: absolute;
+    left: calc(var(--box-border-width) * -1);
+    top: calc(var(--box-border-width) * -1);
+    writing-mode: tb-rl;
+    transform: rotate(-180deg);
+    transform-origin: center left;
+    margin: 0;
+    padding: 0.5em 0.1em 0.5em 0;
+    border: none;
+  }
+
+  #right-side .content-block + .content-block {
+    margin-top: 2.5em;
+  }
+
+  #right-side .content-block:last-child {
+    margin-bottom: var(--box-content-margin);
+  }
+
+  #links {
+    display: flex;
+    flex: 0 1 auto;
+    flex-flow: row;
+  }
+
+  #links .column {
+    width: 33.3%;
+    order: 0;
+  }
+
+  #right-side img.full-width {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 75em) {
+  #left-side {
+    width: calc(100% - 24em - 4em);
+  }
+
+  #right-side {
+    width: 24em;
+  }
+}
+
+@media screen and (min-width: 1993px) {
+  body {
+    background: url(../img/c-base_raumstation.gif) 435px 25px no-repeat, url(../img/planet_base.jpg) no-repeat, url(../img/stars_bg.jpg) no-repeat, url(../img/stars_bg_repeat.jpg) 1992px 0px repeat-x, #5a7a8e;
+  }
+}
+
+@media screen and (min-width: 160em) {
+  #left-side {
+    margin-top: 5em;
+  }
+
+  #right-side {
+    margin-top: 3em;
+  }
+}
