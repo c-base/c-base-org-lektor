@@ -10,7 +10,7 @@
   <link rel="shortcut icon" href="{{ '/static/img/favicon.png'|asseturl }}">
   <link rel="stylesheet" href="{{ '/static/css/normalize.css'|asseturl }}">
   <link rel="stylesheet" href="{{ '/static/css/c-base.css'|asseturl }}">
-  <link rel="stylesheet" href="{{ '/static/css/home.css'|asseturl }}">
+  {% block head %}{% endblock %}
 </head>
 
 <body dir="ltr">
@@ -30,5 +30,6 @@
     {% block body %}{% endblock %}
     </main>
   </section>
+{% block bottom %}{% endblock %}
 </body>
 </html>

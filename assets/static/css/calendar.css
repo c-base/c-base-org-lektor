@@ -1,0 +1,162 @@
+main {
+  margin-top: calc(var(--logo-height) + 2em);
+}
+
+@media screen and (min-width: 64em) {
+  main {
+    margin-top: calc(var(--logo-top-with-navigation) + var(--logo-height) - var(--navigation-top) - 1em /* navigation height */ + 2em /* margin */);
+  }
+}
+
+#calendar-export-state {
+  font-size: 0.8em;
+  margin-top: 0.3em;
+}
+
+#ics-links {
+  margin-top: 1em;
+  padding-bottom: 1em;
+}
+
+#calendar {
+  font-family: lucida console,andale mono,courier new, monospace;
+  overflow: visible;
+}
+
+/* Calendar header */
+#calendar .fc-center {
+  color: #FF9900;
+}
+
+/* Calendar table border */
+#calendar table td, #calendar table th {
+  border-color: #46b6ee;
+}
+
+/* Calender header row */
+#calendar .ui-widget-header th {
+  color: #FF9900;
+  font-weight: normal;
+  padding: 0.15em 0;
+  background-color: #22374C;
+}
+
+/* Regular calendar cells */
+#calendar .ui-widget-content {
+  background-color: rgba(34, 55, 76, 0.2);
+  font-size: 0.95em;
+}
+
+/* All-day/event with time divider in week and day views */
+#calendar hr.fc-divider {
+  border-color: #46b6ee;
+  background-color: #22374C;
+}
+
+/* Day number in month view */
+#calendar .fc-day-number {
+  padding: 3px !important;
+  min-width: 1.1em;
+  font-weight: bold;
+  font-size: 0.85em;
+  border-left: 1px solid #46b6ee;
+  border-bottom: 1px solid #46b6ee;
+  background-color: #22374C;
+  color: #FF9900;
+  text-align: right;
+}
+
+/* Time column in week and day views */
+#calendar .fc-axis {
+  font-size: 0.8em;
+  color: #fff;
+}
+
+/* Calendar event */
+#calendar .fc-content {
+  font-family: Helvetica, Arial, sans-serif;
+  color: #fff;
+  cursor: pointer;
+  white-space: pre-line !important;
+  padding: 0.2em;
+}
+
+/* Today */
+#calendar .ui-widget-content.fc-today {
+  background-color: #46b6ee66;
+}
+
+/* Calendar buttons, dialog buttons */
+#calendar .ui-button, .ui-dialog .ui-button {
+  border: 1px solid #46b6ee;
+  background-color: #22374C;
+  color: #FF9900;
+}
+
+/* Hover states for calendar buttons and dialog buttons */
+#calendar .ui-button:hover, .ui-dialog .ui-button:hover,
+/* Active state for monat, week, day buttons */
+#calendar .ui-button.ui-state-active {
+  background-color: #0c1c2a;
+  border: 1px solid #FF9900;
+  color: #FF9900;
+}
+
+#dialog-legend .dialog {
+  font-family: lucida console,andale mono,courier new, monospace;
+  width: 100%;
+  max-width: 20em;
+}
+
+#dialog-legend table {
+  width: 100%;
+}
+
+#dialog-legend td {
+  padding: 0.4em 3em;
+  text-align: center;
+}
+
+#dialog-details .dialog {
+  font-family: lucida console,andale mono,courier new, monospace;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (min-width: 64em) {
+  #dialog-details .dialog {
+    width: auto;
+    height: auto;
+    min-width: 40em;
+    max-width: 60em;
+    min-height: 30em;
+    max-height: 100%;
+  }
+}
+
+#dialog-details th {
+  text-align: left;
+  padding-right: 1em;
+}
+
+#dialog-details table {
+  margin-bottom: 2em;
+}
+
+#event-location p {
+  margin: 0;
+}
+
+.note {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 1.5em;
+}
+
+.note p {
+  margin: 0;
+}
+
+.note p + p {
+  margin-top: 0.5em;
+}
