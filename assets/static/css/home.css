@@ -1,15 +1,8 @@
 .ugly-box {
-  padding: 1em;
+  padding: 1.5em;
   color: yellow;
-  background-color: black;
-}
-
-.ugly-box p:first-child {
-  margin-top: 0;
-}
-
-.ugly-box p:last-child {
-  margin-bottom: 0;
+  background-color: var(--box-background);
+  border: var(--text-box-border);
 }
 
 a.ugly-button {
@@ -120,7 +113,7 @@ main {
     border: var(--box-border-width) solid #46b6ee;
     position: relative;
     overflow: visible;
-    background-color: rgba(90, 122, 142, 0.3);
+    background-color: var(--box-background);
   }
 
   #right-side .box-content-margin {

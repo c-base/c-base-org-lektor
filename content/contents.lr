@@ -4,7 +4,7 @@ title: Raumstation unter Berlin
 ---
 content:
 
-#### image-with-uglybox ####
+#### infobox ####
 image: rc3-logo.png
 ----
 text:
@@ -18,7 +18,7 @@ text:
   <!-- Biohazard -->
   <section class="content-block">
     <div class="center"><img src="static/img/cbiohazard.png" width="220"></div>
-    <div class="ugly-box">
+    <div class="ugly-box box-paragraphs">
       <p class="center bold">c-base is closed!</p>
       <p>Due to a newly discovered fast spreading virus the spacestation will cancel all planned events and close down until further notice. Please check <a href="https://logbuch.c-base.org/archives/4933">this page for details</a>.
          Stay safe, wash your tentacles! Thank you for considering the safety-instructions.
@@ -49,4 +49,4 @@ montags 20:30
 <span class="event_name">c-lounge</span>  
 donnerstags 20:30
 
-<a class="button full-width" href="calendar/">Alle Termine</a>  
+<a class="button full-width" href="calendar/">Alle Termine</a>
