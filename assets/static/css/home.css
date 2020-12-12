@@ -92,35 +92,6 @@ main {
   margin-top: 2em;
 }
 
-
-footer {
-  height: 588px;
-  padding-top: 425px;
-  background-color: #5a7b8e;
-  background: url(../img/footer_bg.jpg) no-repeat;
-}
-
-footer .container {
-  display: flex;
-  flex: 0 1 auto;
-  flex-flow: row wrap;
-}
-
-footer ul {
-  margin: 0;
-  list-style-image: url(../img/link_dark.gif);
-}
-
-footer a:link, footer a:visited {
-  color: #0b1729;
-  text-decoration: none;
-}
-
-footer a:hover, footer a:active {
-  color: #122035;
-  text-decoration: underline;
-}
-
 @media screen and (min-width: 64em) {
   body {
     background: url(../img/c-base_raumstation.gif) 435px 25px no-repeat, url(../img/planet_base.png) no-repeat, url(../img/stars_only.jpg) repeat, #020303;
@@ -210,12 +181,6 @@ footer a:hover, footer a:active {
 
   #right-side {
     width: 24em;
-  }
-}
-
-@media screen and (min-width: 1993px) {
-  body {
-    background: url(../img/c-base_raumstation.gif) 435px 25px no-repeat, url(../img/planet_base.jpg) no-repeat, url(../img/stars_bg.jpg) no-repeat, url(../img/stars_bg_repeat.jpg) 1992px 0px repeat-x, #5a7a8e;
   }
 }
 

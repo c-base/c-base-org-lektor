@@ -39,6 +39,33 @@ body {
   background: url(../img/c-base_raumstation.gif) 50% calc(var(--navigation-burger-height) + var(--logo-top)) no-repeat, url(../img/stars_only.jpg) repeat, #020303;
 }
 
+footer {
+  background-color: #5a7b8e;
+  margin-top: 1.5em;
+  padding: 1em 0;
+}
+
+footer .container {
+  display: flex;
+  flex: 0 1 auto;
+  flex-flow: row wrap;
+}
+
+footer ul {
+  margin: 0;
+  list-style-image: url(../img/link_dark.gif);
+}
+
+footer a:link, footer a:visited {
+  color: #0b1729;
+  text-decoration: none;
+}
+
+footer a:hover, footer a:active {
+  color: #122035;
+  text-decoration: underline;
+}
+
 .container {
   margin: 0 auto;
   max-width: 1200px;
@@ -229,7 +256,14 @@ a.button.full-width {
 
 @media screen and (min-width: 64em) {
   body {
-    background: url(../img/c-base_raumstation.gif) 50% var(--logo-top-with-navigation) no-repeat, url(../img/stars_bg.jpg) no-repeat, #5a7a8e;
+    background: url(../img/c-base_raumstation.gif) 50% var(--logo-top-with-navigation) no-repeat, url(../img/stars_only.jpg) repeat, #020303;
+  }
+
+  footer {
+    margin-top: 0;
+    min-height: 588px;
+    background: url(../img/footer_bg.jpg) repeat-x, #5a7b8e;
+    padding: 425px 0 1em 0;
   }
 
   .navigation {
