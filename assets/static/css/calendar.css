@@ -19,7 +19,6 @@ main {
 }
 
 #calendar {
-  font-family: lucida console,andale mono,courier new, monospace;
   overflow: visible;
 }
 
@@ -74,7 +73,6 @@ main {
 
 /* Calendar event */
 #calendar .fc-content {
-  font-family: Helvetica, Arial, sans-serif;
   color: #fff;
   cursor: pointer;
   white-space: pre-line !important;
@@ -103,7 +101,6 @@ main {
 }
 
 #dialog-legend .dialog {
-  font-family: lucida console,andale mono,courier new, monospace;
   width: 100%;
   max-width: 20em;
 }
@@ -118,7 +115,6 @@ main {
 }
 
 #dialog-details .dialog {
-  font-family: lucida console,andale mono,courier new, monospace;
   width: 100%;
   height: 100%;
 }

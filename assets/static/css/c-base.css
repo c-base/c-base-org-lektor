@@ -9,6 +9,9 @@
 
   --box-border-width: 2px;
   --box-content-margin: 1em;
+
+  --font-sans-serif: Helvetica, Arial, sans-serif;
+  --font-monospace: lucida console, andale mono, courier new, monospace;
 }
 
 .debug {
@@ -32,7 +35,7 @@ body {
   color: #fff;
   margin: 0;
   padding: 0;
-  font-family: lucida console, andale mono, verdana, sans-serif;
+  font-family: var(--font-sans-serif);
   background: url(../img/c-base_raumstation.gif) 50% calc(var(--navigation-burger-height) + var(--logo-top)) no-repeat, url(../img/stars_bg.jpg) no-repeat, #5a7a8e;
 }
 
@@ -54,6 +57,7 @@ a:hover, a:active {
 }
 
 a.button {
+  font-family: var(--font-monospace);
   display: inline-block;
   padding: 0.5em 1.2em;
   color: #ff9900;
@@ -123,6 +127,7 @@ a.button.full-width {
 }
 
 .navigation {
+  font-family: var(--font-monospace);
   text-align: right;
   width: 100%;
   color: var(--navigation-color);

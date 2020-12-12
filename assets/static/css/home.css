@@ -13,6 +13,7 @@
 }
 
 a.ugly-button {
+  font-family: var(--font-monospace);
   color: black;
   padding: 0.4em 0.5em;
   background: yellow;
@@ -132,6 +133,7 @@ main {
   }
 
   #right-side .content-block h2.section-headline {
+    font-family: var(--font-monospace);
     display: inline-block;
     font-size: 1em;
     font-weight: normal;
