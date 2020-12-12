@@ -131,3 +131,6 @@ dmypy.json
 
 # Mac OS
 .DS_Store
+
+# ignore temp files created by Krita and VIM
+*.*~
