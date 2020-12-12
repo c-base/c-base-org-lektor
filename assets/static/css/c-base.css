@@ -12,6 +12,9 @@
 
   --font-sans-serif: Helvetica, Arial, sans-serif;
   --font-monospace: lucida console, andale mono, courier new, monospace;
+
+  --box-background: rgba(90, 122, 142, 0.3);
+  --text-box-border: 1px solid #46b6ee30;
 }
 
 .debug {
@@ -392,4 +395,18 @@ a.button.full-width {
 
 .dialog .content {
   padding: 1em;
+}
+
+.info-box {
+  padding: 1em;
+  background-color: var(--box-background);
+  border: var(--text-box-border);
+}
+
+.box-paragraphs p:first-child {
+  margin-top: 0;
+}
+
+.box-paragraphs p:last-child {
+  margin-bottom: 0;
 }
