@@ -1,0 +1,10 @@
+name: 'Build c-base.org'
+description: 'Use lektor static site generator to build c-base.org'
+author: 'c-base e.V.'
+branding:
+  icon: 'truck'  
+  color: 'purple'
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
