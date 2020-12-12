@@ -1,0 +1,56 @@
+_model: home
+---
+title: Sponsors
+---
+content:
+
+#### markdown ####
+text:
+
+# Sponsoren
+
+Die c-base gibt und nimmt: wir stellen technisches Know-how und R&auml;umlichkeiten zur Verf&uuml;gung,<br />
+ um Erfahrungen quer durch alle Medienbereiche zu sammeln und weiterzugeben.<br />
+Um die technische Infrastruktur weiter auszubauen, sind wir auf Spenden und Unterst&uuml;tzung angewiesen.<br />
+Fragen zur Unterstützung beantworten wir gern: E-Mail an vorstand ät c-base.org
+#### image-with-uglybox ####
+image: syseleven.png
+----
+text: SysEleven unterstützt uns bei unserer Infrastruktur (z.B. für diese Website)
+#### image-with-uglybox ####
+image: ipb.png
+----
+text: IPB unterstützt uns durch einen Internetzugang, Server-Housing und IP-Traffic.
+#### markdown ####
+text:
+
+# Die folgenden Firmen und Initiativen haben uns in der Vergangenheit unterstützt
+
+[ Wir danken ] Heinrich Suhr und Helmut Krause.
+
+## Firmenmitglieder
+
+Firmenmitglieder unterstützen die c-base regelmäßig. Dafür erhalten sie besondere Aufmerksamkeit in allen c-base Publikationen und dürfen einen Event pro Jahr in der c-base ausrichten. Viele weitere beiderseitig interessante Projekte sind möglich und können auch gemeinsam entwickelt werden. Firmenmitgliedschaften beginnen bei 170 &euro; im Monat.
+
+<div class="sponsorlogos">
+    <img src="archimedes.png" width="180" height="87" alt="Archimedes" title="Archimedes" border="0" />
+    <img src="google.png" width="180" height="87" alt="Google" title="Google" border="0" />
+	<img src="immoscout24_big.png" width="180" height="87" alt="Immobilienscout 24" title="Immobilienscout 24" border="0" />
+    <img src="intel_appup.png"  width="180" height="87" alt="Intel AppUp developer program" title="Intel AppUp developer program" />
+	<img src="moviepilot.png" width="180" height="87" alt="moviepilot" title="moviepilot" border="0" />
+	<img src="variomedia.png" width="180" height="87" alt="variomedia" title="variomedia" border="0" />
+</div>
+
+
+## Helfer
+
+Bei diesen Helfern bedanken wir uns für die Bereitstellung von Material oder Service, ohne die bestimmte Projekte nicht durchführbar gewesen wären.
+
+ <div class="sponsorlogos">
+	  <img src="autodesk.png" width="150" height="70" alt="Autodesc" border="0" />
+	  <img src="axis.gif" width="150" height="70" alt="AXIS Communications" title="AXIS Communications" border="0" />
+	  <img src="bytecamp.gif" width="150" height="70" alt="bytecamp" border="0" />
+      <img src="heizoel-markt.gif" width="150" height="70" alt="Heiz&ouml;l-Preise" title="Heiz&ouml;l-Preise" border="0"/>
+      <img src="interaid.gif" width="150" height="70" alt="Mineral&ouml;lagentur" title="Mineral&ouml;lagentur" border="0"/>
+  	  <img src="inubit.png" width="150" height="70" alt="inubit" border="0" />
+</div>

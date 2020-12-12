@@ -33,6 +33,21 @@ text:
       </p>
     </div>
   </section>
+#### image-with-uglybox ####
+image: 
+----
+text:
+
+## Sponsoren
+
+Die c-base fliegt durch die Unterstützung durch:
+
+<div class="center">
+  <img alt="IPB - Internet Provider Berlin-Logo" src="ipb.png" style="margin-right: 20px;">
+  <img alt="SysEleven-Logo" src="syseleven.png">
+</div>
+
+<a class="button" href="sponsors/">Alle Infos zu den Sponsoren</a>  
 ---
 sidebar:
 
