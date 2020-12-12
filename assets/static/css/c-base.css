@@ -36,7 +36,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: var(--font-sans-serif);
-  background: url(../img/c-base_raumstation.gif) 50% calc(var(--navigation-burger-height) + var(--logo-top)) no-repeat, url(../img/stars_bg.jpg) no-repeat, #5a7a8e;
+  background: url(../img/c-base_raumstation.gif) 50% calc(var(--navigation-burger-height) + var(--logo-top)) no-repeat, url(../img/stars_only.jpg) repeat, #020303;
 }
 
 .container {
