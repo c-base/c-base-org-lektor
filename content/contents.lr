@@ -1,6 +1,52 @@
-title: Welcome to c-base-org-lektor!
+_model: home
 ---
-body:
+title: Raumstation unter Berlin
+---
+content:
 
-This is a basic demo website that shows how to use Lektor for a basic
-website with some pages and a blog.
+#### image-with-uglybox ####
+image: rc3-logo.png
+----
+text:
+
+c-base @ RC3: c-base will be part of this year's Remote Chaos Experience (RC3).
+
+[More info here](https://logbuch.c-base.org/archives/5025)
+#### markdown ####
+text:
+
+  <!-- Biohazard -->
+  <section class="content-block">
+    <div class="center"><img src="static/img/cbiohazard.png" width="220"></div>
+    <div class="ugly-box">
+      <p class="center bold">c-base is closed!</p>
+      <p>Due to a newly discovered fast spreading virus the spacestation will cancel all planned events and close down until further notice. Please check <a href="https://logbuch.c-base.org/archives/4933">this page for details</a>.
+         Stay safe, wash your tentacles! Thank you for considering the safety-instructions.
+      </p>
+     	<hr>
+      <p class="center bold">Die c-base ist geschlossen!</p>
+      <p>Aufgrund eines neuartigen, sich schnell ausbreitenden Virus sagt die  Raumstation bis auf weiteres alle öffentlichen Veranstaltungen ab und bleibt geschlossen. Aktuelle Details auf <a href="https://logbuch.c-base.org/archives/4933">dieser Seite</a>.
+         Passt auf Euch auf, wascht Eure Tentakel! Danke für die Beachtung der Sicherheitshinweise.
+      </p>
+      <p class="center">
+        <a class="ugly-button" href="https://logbuch.c-base.org/archives/4933">DETAILS</a>
+      </p>
+    </div>
+  </section>
+---
+sidebar:
+
+#### sidebar-section ####
+title: Termine
+----
+text:
+
+Zur Zeit finden nur Online-Veranstaltungen statt. Besucht uns in der [virtuellen Mainhall](https://jitsi.c-base.org/mainhall).
+
+<span class="event_name">Point & Click Adventure Stammtisch</span>  
+montags 20:30
+
+<span class="event_name">c-lounge</span>  
+donnerstags 20:30
+
+<a class="button full-width" href="calendar/">Alle Termine</a>  

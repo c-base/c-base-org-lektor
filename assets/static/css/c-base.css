@@ -1,0 +1,356 @@
+:root {
+  --logo-height: 32px;
+  --logo-top: 0.5em;
+  --logo-top-with-navigation: 3.5em;
+
+  --navigation-burger-height: 58px;
+  --navigation-top: 1em;
+  --navigation-color: #63738f;
+
+  --box-border-width: 2px;
+  --box-content-margin: 1em;
+}
+
+.debug {
+  outline: 1px solid #f00;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html, body {
+  line-height: 1.3;
+  height: 100%;
+}
+
+body {
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  font-family: lucida console, andale mono, verdana, sans-serif;
+  background: url(../img/c-base_raumstation.gif) 50% calc(var(--navigation-burger-height) + var(--logo-top)) no-repeat, url(../img/stars_bg.jpg) no-repeat, #5a7a8e;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 1em;
+  width: 100%;
+}
+
+a:link, a:visited {
+  color: #FF9900;
+  text-decoration: none;
+}
+
+a:hover, a:active {
+  color: #FF9900;
+  text-decoration: underline;
+}
+
+a.button {
+  display: inline-block;
+  padding: 0.5em 1.2em;
+  color: #ff9900;
+  background-color: #22374c;
+  text-decoration: none;
+  opacity: .9;
+  border: 2px solid #46b6ee;
+  margin: 0.3em;
+}
+
+a.button:link, a.button:visited {
+  background-color: #22374c;
+}
+
+a.button:hover, a.button:active {
+  opacity: 1;
+  background-color: #0c1c2a;
+}
+
+a.button.full-width {
+  display: block;
+  text-align: center;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.center {
+  text-align: center;
+}
+
+.margin-right {
+  margin-right: 1em;
+}
+
+.margin-bottom-extra {
+  margin-bottom: 1.5em;
+}
+
+.box-padding {
+  padding: 1em;
+}
+
+.row {
+  display: flex;
+  flex: 0 1 auto;
+  flex-flow: row;
+}
+
+.row.wrap {
+  flex-flow: row wrap;
+}
+
+.row.vertical-center {
+  align-items: center;
+}
+
+.column-grow {
+  flex-grow: 1;
+}
+
+.content-block + .content-block {
+  margin-top: 2em;
+}
+
+.navigation {
+  text-align: right;
+  width: 100%;
+  color: var(--navigation-color);
+}
+
+.navigation ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navigation li a {
+  color: var(--navigation-color);
+  display: block;
+  padding: 1em;
+  text-decoration: none;
+}
+
+.navigation li a:hover,
+.navigation .menu-btn:hover {
+  color: #9ba8bf;
+  background-color: #111;
+}
+
+.navigation .menu {
+  text-align: left;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-top: 58px;
+  width: 100%;
+  background-color: #000;
+  z-index: 100;
+  display: none;
+}
+
+.navigation .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+  background: #000;
+  z-index: 101;
+}
+
+.navigation .menu-icon .navicon {
+  background: var(--navigation-color);
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.navigation .menu-icon .navicon:before,
+.navigation .menu-icon .navicon:after {
+  background: var(--navigation-color);
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.navigation .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.navigation .menu-icon .navicon:after {
+  top: -5px;
+}
+
+.navigation .menu-button {
+  display: none;
+}
+
+.navigation .menu-button:checked ~ .menu {
+  display: block;
+}
+
+.navigation .menu-button:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.navigation .menu-button:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.navigation .menu-button:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.navigation .menu-button:checked ~ .menu-icon:not(.steps) .navicon:before,
+.navigation .menu-button:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+@media screen and (min-width: 64em) {
+  body {
+    background: url(../img/c-base_raumstation.gif) 50% var(--logo-top-with-navigation) no-repeat, url(../img/stars_bg.jpg) no-repeat, #5a7a8e;
+  }
+
+  .navigation {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 1em;
+    width: 100%;
+    margin-top: var(--navigation-top);
+  }
+
+  .navigation .menu-icon {
+    display: none;
+  }
+
+  .navigation .menu {
+    text-align: right;
+    position: static;
+    padding: 0;
+    width: auto;
+    background: none;
+    display: block;
+  }
+
+  .navigation li {
+    display: inline;
+  }
+
+  .navigation li a {
+    display: inline;
+    padding: 0;
+    text-decoration: none;
+  }
+
+  .navigation li a:hover,
+  .navigation .menu-btn:hover {
+    color: #9ba8bf;
+    background-color: #111;
+    text-decoration: underline;
+  }
+
+  .navigation li + li::before {
+    content: " | ";
+  }
+
+  .navigation a:hover, .navigation a:active {
+    text-decoration: underline;
+    color: #9ba8bf;
+  }
+
+  .navigation a:link, .navigation a:visited {
+    text-decoration: none;
+    color: var(--navigation-color);
+  }
+}
+
+.modal {
+  display: none;
+}
+
+.modal.is-open {
+  display: block;
+}
+
+.dialog-overlay {
+  position: fixed;
+  z-index: 200;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2em;
+}
+
+.dialog {
+  max-height: 100%;
+  overflow: auto;
+  background-color: #5A798E;
+  border: 1px solid #46b6ee;
+  padding: 0.2em;
+}
+
+.dialog header {
+  background-color: #22374C;
+  border: 1px solid #46b6ee;
+  display: flex;
+  align-items: center;
+}
+
+.dialog header h2 {
+  font-size: 1em;
+  font-weight: normal;
+  color: #ff9900;
+  margin: 0;
+  padding: 0.5em 1em;
+  flex-grow: 1;
+}
+
+.dialog header button {
+  font-weight: bold;
+  padding: 0.3em 0.5em;
+  margin: 0.3em;
+  color: #ff9900;
+  background-color: #22374c;
+  text-decoration: none;
+  opacity: .9;
+  border: 1px solid #46b6ee;
+  border-radius: 3px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.dialog header button:hover {
+  background-color: #0c1c2a;
+  opacity: 1;
+}
+
+.dialog header .close:hover {
+  color: #FF9900;
+}
+
+.dialog .content {
+  padding: 1em;
+}

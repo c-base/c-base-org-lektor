@@ -1,29 +1,34 @@
-<!doctype html>
-<meta charset="utf-8">
-<link rel="stylesheet" href="{{ '/static/style.css'|url }}">
-<title>{% block title %}Welcome{% endblock %} — c-base-org-lektor</title>
-<body>
-  <header>
-    <h1>c-base-org-lektor</h1>
-    <nav>
-      <ul class="nav navbar-nav">
-        <li{% if this._path == '/' %} class="active"{% endif
-          %}><a href="{{ '/'|url }}">Welcome</a></li>
-        {% for href, title in [
-          ['/blog', 'Blog'],
-          ['/projects', 'Projects'],
-          ['/about', 'About']
-        ] %}
-          <li{% if this.is_child_of(href) %} class="active"{% endif
-            %}><a href="{{ href|url }}">{{ title }}</a></li>
-        {% endfor %}
-      </ul>
-    </nav>
-  </header>
-  <div class="page">
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>c-base >>> {% block title %}{{ this.title }}{% endblock %}</title>
+  <meta name="description" content="c-base is the oldest crashed space station on earth.">
+
+  <link rel="shortcut icon" href="{{ '/static/img/favicon.png'|asseturl }}">
+  <link rel="stylesheet" href="{{ '/static/css/normalize.css'|asseturl }}">
+  <link rel="stylesheet" href="{{ '/static/css/c-base.css'|asseturl }}">
+  <link rel="stylesheet" href="{{ '/static/css/home.css'|asseturl }}">
+</head>
+
+<body dir="ltr">
+
+  <nav class="navigation">
+    <input class="menu-button" type="checkbox" id="menu-button" />
+    <label class="menu-icon" for="menu-button"><span class="navicon"></span></label>
+    <ul class="menu">
+  {%- for label, path in bag('navigation').items() %}
+      <li{% if this.is_child_of(path) %} class="active"{% endif %}><a href="{{ path|url }}">{{ label }}</a></li>
+  {%- endfor %}
+    </ul>
+  </nav>
+
+  <section class="container">
+    <main>
     {% block body %}{% endblock %}
-  </div>
-  <footer>
-    &copy; Copyright 2020 by Uwe Kamper.
-  </footer>
+    </main>
+  </section>
 </body>
+</html>

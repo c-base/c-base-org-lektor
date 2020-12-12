@@ -1,0 +1,60 @@
+{% extends "layout.html" %}
+{% block body %}
+<section id="left-side">
+
+  {{ this.content }}
+
+  <section id="content-buttons">
+    <ul class="row wrap">
+      <li><a class="button" href="https://www.c-base.org/cv50f/">about c-base</a></li>
+      <li><a class="button" href="https://www.c-base.org/cv50f/core/member.html">Member werden</a></li>
+      <li><a class="button" href="https://www.c-base.org/cv50f/">c-base unterst&uuml;tzen</a></li>
+    </ul>
+  </section>
+
+  <section id="links">
+    <section id="links-info" class="column">
+      <ul>
+        <li><a href="https://wiki.c-base.org/dokuwiki/cimp">Infos f&uuml;r Neumember</a></li>
+        <li><a href="https://www.c-base.org/cv50f/core/foto-video-genehmigung.html">Foto- &amp; Drehgenehmigungen</a></li>
+        <li><a href="https://www.c-base.org/presse/pressemappe.pdf">Pressemappe</a></li>
+        <li><a href="https://www.c-base.org/cv50f/core/sponsoren.html">Sponsoren</a> &amp; <a href="https://www.c-base.org/cv50f/core/friends.html">Friends</a></li>
+      </ul>
+    </section>
+    <section id="links-info2" class="column">
+      <ul>
+        <li><a href="https://wiki.c-base.org/coredump/">coredump wiki</a></li>
+        <li><a href="https://www.c-base.org/cv50f/">Website v5.0f</a></li>
+        <li><a href="https://github.com/c-base">c-base on GitHub</a></li>
+      </ul>
+    </section>
+    <section id="links-social" class="column">
+      <ul>
+        <li><a href="http://twitter.com/cbase">c-base on Twitter</a></li>
+        <li><a href="http://www.facebook.com/cbase.raumstation">c-base on Facebook</a></li>
+        <li><a href="http://vimeo.com/cbase">Vimeo Channel</a></li>
+        <li><a href="http://www.reddit.com/r/cbase">c-base on reddit</a></li>
+      </ul>
+    </section>
+  </section>
+
+  <section id="sponsors">
+    <a href="/cv50f/core/sponsoren.html">Liste der c-base Helfer</a> | <a href="/cv50f/core/sponsoren.html">c-base unterst&uuml;tzen</a>
+  </section>
+
+</section>
+
+
+<section id="right-side">
+  <section class="box">
+
+    {{ this.sidebar }}
+
+  </section>
+
+  <section id="tweet-box">
+    <a class="twitter-timeline" data-height="800" data-dnt="true" data-theme="dark" href="https://twitter.com/cbase?ref_src=twsrc%5Etfw">Tweets by @cbase</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </section>
+
+</section>
+{% endblock %}
