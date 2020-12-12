@@ -105,7 +105,7 @@ main {
   }
 
   #left-side {
-    margin-top: 240px;
+    margin-top: 300px;
     width: calc(100% - 20em - 4em);
   }
 
@@ -181,6 +181,12 @@ main {
 
   #right-side {
     width: 24em;
+  }
+}
+
+@media screen and (min-width: 100em) {
+  #left-side {
+    margin-top: 240px;
   }
 }
 
