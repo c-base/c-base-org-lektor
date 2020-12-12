@@ -1,0 +1,107 @@
+{% extends "layout.html" %}
+{% block head %}
+  <link rel="stylesheet" href="{{ '/static/lib/fullcalendar-3.5.1/fullcalendar.css'|asseturl }}">
+  <link rel="stylesheet" href="{{ '/static/lib/css/jquery-ui.min.css'|asseturl }}">
+  <link rel="stylesheet" href="{{ '/static/css/calendar.css'|asseturl }}">
+{% endblock %}
+
+{% block body %}
+  {% if this.note %}
+  <section class="note">
+  {{ this.note }}
+  </section>
+  {% endif %}
+
+  <div id="calendar"></div>
+
+  <div id="calendar-export-state">
+    Stand / last exported at: <span id="last-update">unbekannt / unknown</span>,
+    Errors: <span id="error-display">---</span>
+  </div>
+
+  {{ this.footer }}
+{% endblock %}
+
+{% block bottom %}
+  <div id="dialog-legend" aria-hidden="true" class="modal">
+    <div tabindex="-1" data-micromodal-close class="dialog-overlay">
+
+      <div role="dialog" aria-modal="true" aria-labelledby="dialog-legend-title" class="dialog">
+        <header>
+          <h2 id="dialog-legend-title">
+            Colors
+          </h2>
+
+          <button aria-label="Close modal" data-micromodal-close>×</button>
+        </header>
+
+        <div id="dialog-legend-content" class="content">
+          <table>
+            <tr>
+              <td id="c_base_events">Events</td>
+            </tr>
+            <tr>
+              <td id="c_base_regulars">Regulars</td>
+            </tr>
+            <tr>
+              <td id="c_base_seminars">Seminars</td>
+            </tr>
+            <tr>
+              <td id="c_base_online">Online</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div id="dialog-details" aria-hidden="true" class="modal">
+    <div tabindex="-1" data-micromodal-close class="dialog-overlay">
+
+      <div role="dialog" aria-modal="true" aria-labelledby="dialog-details-title" class="dialog">
+        <header>
+          <h2 id="dialog-details-title">
+            Details
+          </h2>
+
+          <button aria-label="Close modal" data-micromodal-close>×</button>
+        </header>
+
+        <div id="dialog-details-content" class="content">
+          <table>
+              <tr>
+                  <th>Date:</th>
+                  <td id="event-day"></td>
+              </tr>
+              <tr>
+                  <th>Start:</th>
+                  <td id="event-start"></td>
+              </tr>
+              <tr>
+                  <th>End:</th>
+                  <td id="event-end"></td>
+              </tr>
+              <tr>
+                  <th>Location:</th>
+                  <td id="event-location"></td>
+              </tr>
+          </table>
+          <div id="event-description"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="{{ '/static/lib/micromodal.min.js'|asseturl }}"></script>
+  <script src="{{ '/static/lib/purify.min.js'|asseturl }}"></script>
+  <script src="{{ '/static/lib/marked.min.js'|asseturl }}"></script>
+  <script src="{{ '/static/lib/jquery-3.1.1.min.js'|asseturl }}"></script>
+  <script src="{{ '/static/lib/moment-with-locales.js'|asseturl }}"></script>
+  <script src="{{ '/static/lib/fullcalendar-3.5.1/fullcalendar.min.js'|asseturl }}"></script>
+  <script src="{{ '/static/lib/fullcalendar-3.5.1/locale-all.js'|asseturl }}"></script>
+  <script src="{{ '/static/calendar-data/events.js'|asseturl }}"></script>
+  <script src="{{ '/static/calendar-data/errors.js'|asseturl }}"></script>
+  <script src="{{ '/static/js/c-base-calendar.js'|asseturl }}"></script>
+{% endblock %}

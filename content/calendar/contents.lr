@@ -1,0 +1,22 @@
+_model: calendar
+---
+title: Kalender unter Berlin
+---
+note:
+
+No on-site events at c-base at the moment, see the calendar below for online-only events.
+
+Zur Zeit keine Events an Bord der Station. Online-Events siehe unten im Kalender.
+---
+footer:
+
+<details id="ics-links">
+  <summary>iCalendar/ICS</summary>
+  <ul>
+    <li>Gesammelte iCalendar/ICS-Datei / download as iCalendar/ICS file : <tt><a href="/calendar/exported/c-base-events.ics">https://www.c-base.org/calendar/exported/c-base-events.ics</a></tt></li>
+    <li>Nur Mainhall-Events / events in mainhall only: <tt><a href="/calendar/exported/events.ics">https://www.c-base.org/calendar/exported/events.ics</a></tt></li>
+    <li>Wiederkehrende Events / regular events: <tt><a href="/calendar/exported/regulars.ics">https://www.c-base.org/calendar/exported/regulars.ics</a></tt></li>
+    <li>Seminarraum / seminar room: <tt><a href="/calendar/exported/seminars.ics">https://www.c-base.org/calendar/exported/seminars.ics</a></tt></li>
+    <li>Online / online-only events: <tt><a href="/calendar/exported/online.ics">https://www.c-base.org/calendar/exported/online.ics</a></tt></li>
+  </ul>
+</details>
