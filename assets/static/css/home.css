@@ -148,3 +148,37 @@ main {
     margin-top: 3em;
   }
 }
+
+#upcoming .fc-list-heading .ui-widget-header {
+  padding-top: 1em;
+  font-weight: bold;
+  border-bottom: 1px solid var(--default-text-color);
+}
+
+#upcoming td {
+  vertical-align: top;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+}
+
+#upcoming td.fc-list-item-time {
+  padding-right: 0.6em;
+}
+
+#upcoming .fc-list-heading-main {
+  color: var(--highlight-color);
+}
+
+#upcoming .fc-list-heading-alt {
+  color: var(--highlight-color);
+  float: right;
+}
+
+#upcoming .fc-list-item-title a {
+  color: var(--highlight-color);
+  cursor: pointer;
+}
+
+#upcoming .fc-list-empty {
+  margin-top: 1em;
+}
