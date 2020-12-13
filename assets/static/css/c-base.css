@@ -42,6 +42,10 @@ body {
   background: url(../img/c-base_raumstation.gif) 50% calc(var(--navigation-burger-height) + var(--logo-top)) no-repeat, url(../img/stars_only.jpg) repeat, #020303;
 }
 
+main {
+  margin-top: calc(var(--logo-height) + 2em);
+}
+
 footer {
   background-color: #5a7b8e;
   margin-top: 1.5em;
@@ -260,6 +264,10 @@ a.button.full-width {
 @media screen and (min-width: 64em) {
   body {
     background: url(../img/c-base_raumstation.gif) 50% var(--logo-top-with-navigation) no-repeat, url(../img/stars_only.jpg) repeat, #020303;
+  }
+
+  main {
+    margin-top: calc(var(--logo-top-with-navigation) + var(--logo-height) - var(--navigation-top) - 1em /* navigation height */ + 2em /* margin */);
   }
 
   footer {
