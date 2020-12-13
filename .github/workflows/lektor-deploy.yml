@@ -1,6 +1,9 @@
 name: 'Lektor-Build c-base.org'
 
-on: push
+on:
+  push:
+    branches:
+      - master
 
 jobs:
   lektor-build:
@@ -20,16 +23,16 @@ jobs:
         python -m pip install --upgrade pip
         pip install poetry
         poetry config virtualenvs.create false 
-        poetry install --no-interaction --no-ansi	
-    - name: Lint with flake8
-      run: |
-        # stop the build if there are Python syntax errors or undefined names
-        flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
-        # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
-        flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
-    - name: Test with pytest
-      run: |
-        pytest
+        poetry install --no-dev --no-interaction --no-ansi	
     - name: Build with Lektor
       run: |
         lektor build
+    - name: Setup SSH Keys and known_hosts and then deploy
+      env:
+        SSH_AUTH_SOCK: /tmp/ssh_agent.sock
+      run: |
+        mkdir -p ~/.ssh
+        ssh-keyscan github.com >> ~/.ssh/known_hosts
+        ssh-agent -a $SSH_AUTH_SOCK > /dev/null
+        ssh-add - <<< "${{ secrets.LEKTOR_DEPLOY_KEY }}"
+        lektor deploy
