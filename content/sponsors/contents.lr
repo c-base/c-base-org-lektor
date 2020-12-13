@@ -9,14 +9,12 @@ text:
 
 # Sponsoren
 
-Die c-base gibt und nimmt: wir stellen technisches Know-how und R&auml;umlichkeiten zur Verf&uuml;gung,<br />
- um Erfahrungen quer durch alle Medienbereiche zu sammeln und weiterzugeben.<br />
-Um die technische Infrastruktur weiter auszubauen, sind wir auf Spenden und Unterst&uuml;tzung angewiesen.<br />
-Fragen zur Unterstützung beantworten wir gern: E-Mail an vorstand ät c-base.org
+Die c-base gibt und nimmt: Wir stellen technisches Know-how und Räumlichkeiten zur Verfügung, um Erfahrungen quer durch alle Medienbereiche zu sammeln und weiterzugeben. Um die technische Infrastruktur weiter auszubauen, sind wir auf Spenden und Unterstüzung angewiesen.
+Fragen zur Unterstützung beantwortet gerne [unser Vorstand](/impressum/).
 #### infobox ####
 image: syseleven.png
 ----
-text: SysEleven unterstützt uns bei unserer Infrastruktur (z.B. für diese Website)
+text: SysEleven unterstützt uns bei unserer Infrastruktur. Unter anderem werden diese Website, unser [logbuch](https://logbuch.c-base.org/), das [Audio-Blog](https://audioblog.c-base.org/) bei SysEleven gehostet.
 ----
 class: vertical-center
 #### infobox ####
@@ -28,13 +26,17 @@ class: vertical-center
 #### markdown ####
 text:
 
-# Die folgenden Firmen und Initiativen haben uns in der Vergangenheit unterstützt
+# Ehemalige Sponsoren
 
-[ Wir danken ] Heinrich Suhr und Helmut Krause.
+Die folgenden Firmen und Initiativen haben uns in der Vergangenheit unterstützt. Ohne sie wäre die c-base vor einigen Jahren (zum zweiten Mal) spektakulär abgestürzt.
+
+## Privatpersonen
+
+Wir danken Heinrich Suhr und Helmut Krause.
 
 ## Firmenmitglieder
 
-Firmenmitglieder unterstützen die c-base regelmäßig. Dafür erhalten sie besondere Aufmerksamkeit in allen c-base Publikationen und dürfen einen Event pro Jahr in der c-base ausrichten. Viele weitere beiderseitig interessante Projekte sind möglich und können auch gemeinsam entwickelt werden. Firmenmitgliedschaften beginnen bei 170 &euro; im Monat.
+Firmenmitglieder haben die c-base regelmäßig unterstützt. Dafür erhielten sie besondere Aufmerksamkeit in allen c-base-Publikationen und durften einen Event pro Jahr in der c-base ausrichten. Viele weitere beiderseitig interessante Projekte waren möglich und konnten auch gemeinsam entwickelt werden.
 
 <div class="sponsorlogos">
     <img src="archimedes.png" width="180" height="87" alt="Archimedes" title="Archimedes" border="0" />
@@ -45,10 +47,9 @@ Firmenmitglieder unterstützen die c-base regelmäßig. Dafür erhalten sie beso
 	<img src="variomedia.png" width="180" height="87" alt="variomedia" title="variomedia" border="0" />
 </div>
 
-
 ## Helfer
 
-Bei diesen Helfern bedanken wir uns für die Bereitstellung von Material oder Service, ohne die bestimmte Projekte nicht durchführbar gewesen wären.
+Bei diesen Helfern bedanken wir uns für die Bereitstellung von Material oder Dienstleistungen, ohne die bestimmte Projekte nicht durchführbar gewesen wären.
 
  <div class="sponsorlogos">
 	  <img src="autodesk.png" width="150" height="70" alt="Autodesc" border="0" />
