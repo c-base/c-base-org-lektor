@@ -2,4 +2,7 @@
 name = c-base-org-lektor
 
 [servers.ghpages]
+name = Testing (test.cketti.eu)
+enabled = yes
+default = yes
 target = ghpages://cketti/website-test?cname=test.cketti.eu
