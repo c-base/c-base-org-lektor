@@ -265,7 +265,7 @@ a.button.full-width {
   footer {
     margin-top: 0;
     min-height: 320px;
-    background: url(../img/footer_bg_uk.png) repeat-x, #020303;
+    background: url(../img/footer_stars.png) no-repeat, url(../img/footer_bg_uk.png) repeat-x, #020303;
     padding: 155px 0 1em 0;
   }
 
