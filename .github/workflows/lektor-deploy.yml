@@ -1,4 +1,4 @@
-name: 'Lektor-Build c-base.org'
+name: 'Lektor deploy to test.cketti.eu'
 
 on:
   push:
