@@ -43,39 +43,6 @@ main {
   list-style: none;
 }
 
-#links ul {
-  margin: 0;
-  list-style-image: url(../img/link_dark.gif);
-}
-
-#links a:link, #links a:visited {
-  color: #fff;
-  text-decoration: none;
-}
-
-#links a:hover, #links a:active {
-  color: #fff;
-  text-decoration: underline;
-}
-
-#sponsors {
-  margin: 2em 0 2em 0;
-}
-
-#links {
-  display: flex;
-  flex: 0 1 auto;
-  flex-flow: row wrap;
-}
-
-#links .column {
-  width: 50%;
-}
-
-#links-info2 {
-  order: 2;
-}
-
 #right-side img {
   display: block;
   margin: 0 auto;
@@ -149,17 +116,6 @@ main {
 
   #right-side .content-block:last-child {
     margin-bottom: var(--box-content-margin);
-  }
-
-  #links {
-    display: flex;
-    flex: 0 1 auto;
-    flex-flow: row;
-  }
-
-  #links .column {
-    width: 33.3%;
-    order: 0;
   }
 
   #right-side img.full-width {
