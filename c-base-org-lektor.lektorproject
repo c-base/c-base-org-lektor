@@ -2,4 +2,4 @@
 name = c-base-org-lektor
 
 [servers.ghpages]
-target = ghpages://cketti/website-test
+target = ghpages://cketti/website-test?cname=test.cketti.eu
