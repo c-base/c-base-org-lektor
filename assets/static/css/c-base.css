@@ -61,10 +61,11 @@ footer .container {
   display: flex;
   flex: 0 1 auto;
   flex-flow: row wrap;
+  justify-content: center;
 }
 
 footer ul {
-  margin: 0;
+  margin: 0 2em;
   list-style-image: url(../img/link_dark.gif);
 }
 
