@@ -1,2 +1,5 @@
 [project]
 name = c-base-org-lektor
+
+[servers.ghpages]
+target = ghpages://cketti/website-test

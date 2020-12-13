@@ -33,3 +33,15 @@ jobs:
     - name: Build with Lektor
       run: |
         lektor build
+    - name: Setup SSH Keys and known_hosts
+      env:
+        SSH_AUTH_SOCK: /tmp/ssh_agent.sock
+      run: |
+        mkdir -p ~/.ssh
+        ssh-keyscan github.com >> ~/.ssh/known_hosts
+        ssh-agent -a $SSH_AUTH_SOCK > /dev/null
+        ssh-add - <<< "${{ secrets.LEKTOR_DEPLOY_KEY }}"
+    - name: Deploy to ghpages
+      env: # Key as an environment variable
+      run: |
+        lektor deploy
