@@ -1,4 +1,4 @@
-_model: home
+_model: page
 ---
 title: Sponsors
 ---
@@ -13,14 +13,18 @@ Die c-base gibt und nimmt: wir stellen technisches Know-how und R&auml;umlichkei
  um Erfahrungen quer durch alle Medienbereiche zu sammeln und weiterzugeben.<br />
 Um die technische Infrastruktur weiter auszubauen, sind wir auf Spenden und Unterst&uuml;tzung angewiesen.<br />
 Fragen zur Unterstützung beantworten wir gern: E-Mail an vorstand ät c-base.org
-#### image-with-uglybox ####
+#### infobox ####
 image: syseleven.png
 ----
 text: SysEleven unterstützt uns bei unserer Infrastruktur (z.B. für diese Website)
-#### image-with-uglybox ####
+----
+class: vertical-center
+#### infobox ####
 image: ipb.png
 ----
 text: IPB unterstützt uns durch einen Internetzugang, Server-Housing und IP-Traffic.
+----
+class: vertical-center
 #### markdown ####
 text:
 

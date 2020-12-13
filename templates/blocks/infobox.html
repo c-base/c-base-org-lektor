@@ -1,7 +1,7 @@
 {% set img = record.attachments.images.get(this.image) %}
 {% if img %}
-  <section class="content-block row vertical-center info-box box-paragraphs">
-    <img class="margin-right" src="{{ img.thumbnail(64)|url }}" width="64" height="64">
+  <section class="content-block row info-box box-paragraphs {{ this.class }}">
+    <img class="margin-right" src="{{ img|url }}">
     <div class="column-grow">{{ this.text }}</div>
   </section>
 {% else %}
