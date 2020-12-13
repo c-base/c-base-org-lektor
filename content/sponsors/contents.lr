@@ -17,10 +17,14 @@ Fragen zur Unterstützung beantworten wir gern: E-Mail an vorstand ät c-base.or
 image: syseleven.png
 ----
 text: SysEleven unterstützt uns bei unserer Infrastruktur (z.B. für diese Website)
+----
+class: vertical-center
 #### infobox ####
 image: ipb.png
 ----
 text: IPB unterstützt uns durch einen Internetzugang, Server-Housing und IP-Traffic.
+----
+class: vertical-center
 #### markdown ####
 text:
 

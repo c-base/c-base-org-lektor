@@ -12,6 +12,8 @@ text:
 c-base @ RC3: c-base will be part of this year's Remote Chaos Experience (RC3).
 
 [More info here](https://logbuch.c-base.org/archives/5025)
+----
+class: vertical-center
 #### markdown ####
 text:
 
@@ -48,6 +50,8 @@ Die c-base fliegt durch die Unterstützung durch:
 </div>
 
 <a class="button" href="sponsors/">Alle Infos zu den Sponsoren</a>  
+----
+class: 
 ---
 sidebar:
 
