@@ -42,6 +42,5 @@ jobs:
         ssh-agent -a $SSH_AUTH_SOCK > /dev/null
         ssh-add - <<< "${{ secrets.LEKTOR_DEPLOY_KEY }}"
     - name: Deploy to ghpages
-      env: # Key as an environment variable
       run: |
         lektor deploy
