@@ -49,12 +49,12 @@ main {
 }
 
 #links a:link, #links a:visited {
-  color: #0b1729;
+  color: #fff;
   text-decoration: none;
 }
 
 #links a:hover, #links a:active {
-  color: #0b1729;
+  color: #fff;
   text-decoration: underline;
 }
 
