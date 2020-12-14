@@ -45,10 +45,13 @@ body {
   padding: 0;
   font-family: var(--font-sans-serif);
   background: url(../img/c-base_raumstation.gif) 50% calc(var(--navigation-burger-height) + var(--logo-top)) no-repeat, url(../img/stars_only.jpg) repeat, #020303;
+  display: flex;
+  flex-flow: column;
 }
 
 main {
   margin-top: calc(var(--logo-height) + 2em);
+  flex-grow: 1;
 }
 
 footer {
@@ -80,7 +83,8 @@ footer a:hover, footer a:active {
 }
 
 .container {
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   max-width: 1200px;
   padding: 0 1em;
   width: 100%;
