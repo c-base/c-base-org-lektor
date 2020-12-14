@@ -32,3 +32,15 @@
 </section>
 
 {% endblock %}
+
+{% block bottom %}
+<script src="{{ '/static/lib/jquery-3.1.1.min.js'|asseturl }}"></script>
+<script src="{{ '/static/lib/moment-with-locales.js'|asseturl }}"></script>
+<script src="{{ '/static/lib/fullcalendar-3.5.1/fullcalendar.min.js'|asseturl }}"></script>
+<script src="{{ '/static/lib/fullcalendar-3.5.1/locale-all.js'|asseturl }}"></script>
+{#
+<script src="{{ '/static/calendar-data/events.js'|asseturl }}"></script>
+#}
+<script src="https://www.c-base.org/calendar/exported/events.js"></script>
+<script src="{{ '/static/js/upcoming.js'|asseturl }}"></script>
+{% endblock %}

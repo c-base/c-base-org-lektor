@@ -60,6 +60,14 @@ title: Termine
 ----
 text:
 
+<div id="upcoming"></div>
+
+<a class="button full-width" href="calendar/">Alle Termine</a>
+#### sidebar-section ####
+title: Regelmäßig
+----
+text:
+
 Zur Zeit finden nur Online-Veranstaltungen statt. Besucht uns in der [virtuellen Mainhall](https://jitsi.c-base.org/mainhall).
 
 <span class="event_name">Point & Click Adventure Stammtisch</span>  
@@ -68,4 +76,4 @@ montags 20:30
 <span class="event_name">c-lounge</span>  
 donnerstags 20:30
 
-<a class="button full-width" href="calendar/">Alle Termine</a>
+<a class="button full-width" href="calendar/">Zum Kalender</a>
