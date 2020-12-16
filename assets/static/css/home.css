@@ -149,6 +149,10 @@ main {
   }
 }
 
+#upcoming table {
+  width: 100%;
+}
+
 #upcoming .fc-list-heading .ui-widget-header {
   padding-top: 1em;
   font-weight: bold;
@@ -172,6 +176,10 @@ main {
 #upcoming .fc-list-heading-alt {
   color: var(--highlight-color);
   float: right;
+}
+
+#upcoming td.fc-list-item-title {
+  width: 90%;
 }
 
 #upcoming .fc-list-item-title a {
