@@ -54,7 +54,7 @@ main {
 
 @media screen and (min-width: 64em) {
   body {
-    background: url(../img/c-base_raumstation.gif) 435px 25px no-repeat, url(../img/planet_base.png) no-repeat, url(../img/stars_only.jpg) repeat, #020303;
+    background: url(../img/c-base_raumstation.gif) 435px 25px no-repeat, url(../img/planet_base.png) no-repeat, url(../img/stars_only.png) repeat, #020303;
   }
 
   main {
