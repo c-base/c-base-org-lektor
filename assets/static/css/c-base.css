@@ -60,15 +60,8 @@ footer {
   padding: 1em 0;
 }
 
-footer .container {
-  display: flex;
-  flex: 0 1 auto;
-  flex-flow: row wrap;
-  justify-content: center;
-}
-
 footer ul {
-  margin: 0 2em;
+  margin-bottom: 1em;
   list-style-image: url(../img/link_dark.gif);
 }
 
@@ -274,6 +267,19 @@ a.button.full-width {
 .navigation .menu-button:checked ~ .menu-icon:not(.steps) .navicon:before,
 .navigation .menu-button:checked ~ .menu-icon:not(.steps) .navicon:after {
   top: 0;
+}
+
+@media screen and (min-width: 32em) {
+  footer .container {
+    display: flex;
+    flex: 0 1 auto;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  
+  footer ul {
+    margin: 0 2em 1em 2em;
+  }
 }
 
 @media screen and (min-width: 64em) {
