@@ -6,6 +6,7 @@
 }
 
 a.ugly-button {
+  display: inline-block;
   font-family: var(--font-monospace);
   color: black;
   padding: 0.4em 0.5em;
