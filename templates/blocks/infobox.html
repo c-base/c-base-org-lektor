@@ -1,11 +1,11 @@
 {% set img = record.attachments.images.get(this.image) %}
 {% if img %}
-  <section class="content-block row info-box box-paragraphs {{ this.class }}">
+  <section class="content-block row info-box {{ this.class }}">
     <img class="margin-right" src="{{ img|url }}">
-    <div class="column-grow">{{ this.text }}</div>
+    <div class="column-grow box-contents">{{ this.text }}</div>
   </section>
 {% else %}
-  <section class="content-block info-box box-paragraphs">
+  <section class="content-block info-box box-contents">
     {{ this.text }}
   </section>
 {% endif %}

@@ -432,10 +432,10 @@ a.button.full-width {
   border: var(--text-box-border);
 }
 
-.box-paragraphs p:first-child {
+.box-contents > :first-child {
   margin-top: 0;
 }
 
-.box-paragraphs p:last-child {
+.box-contents > :last-child {
   margin-bottom: 0;
 }
