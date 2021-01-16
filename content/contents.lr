@@ -25,6 +25,16 @@ text:
       </p>
     </div>
   </section>
+#### markdown ####
+text:
+
+  <section id="content-buttons">
+    <ul class="row wrap">
+      <li><a class="button" href="https://www.c-base.org/cv50f/">about c-base</a></li>
+      <li><a class="button" href="https://www.c-base.org/cv50f/core/member.html">Member werden</a></li>
+      <li><a class="button" href="https://www.c-base.org/cv50f/">c-base unterst&uuml;tzen</a></li>
+    </ul>
+  </section>
 #### infobox ####
 image: 
 ----
