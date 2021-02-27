@@ -1,10 +1,50 @@
 _model: page
 ---
-title: Über die c-base
+title: Impressum
 ---
 content:
 
 #### markdown ####
 text:
 
-[insert text here]
+# Impressum
+
+<span class="secondary">c-base e.V.</span>  
+Rungestraße 20  
+10179 Berlin  
+
+☎ +49 (30) 285 993 00
+
+<span class="secondary">Finanzielles, Mitgliedschaft (Eintritt / Austritt):</span> cash @ c-base.org
+
+<span class="secondary">Verwaltung:</span> vorstand @ c-base.org  
+<span class="secondary">Seminare:</span> seminarorga @ c-base.org  
+<span class="secondary">Veranstaltungen / Vermietung:</span> cultorga @ c-base.org
+
+<span class="secondary">Satzung:</span>  
+[Satzung des c-base e.V.](https://www.c-base.org/satzung.html)
+
+<span class="secondary">Vorstand:</span>  
+Wulf 'grenouille' Coulmann (Vorsitzender)  
+Sebastian 'smile' Seitz (Finanzen)  
+Sebastian 'e-punc' Marg (Sprecher)  
+Uwe 'uk' Kamper (Schriftführer)  
+Andre 'teco' Helwig (Beisitzer)  
+
+<span class="secondary">Vertretungsberechtigt:</span>  
+Cultorga - Niels Zahlaus  
+Seminarorga - Sascha 'cascha' Behrendt  
+
+<span class="secondary">Vereinsregister-Nr.:</span> VR 16105 B  
+<span class="secondary">USt-ID:</span> DE 264335190
+
+<span class="secondary">Bankverbindung:</span>  
+ c-base e.V.  
+ HYPOVEREINSBANK-POTSDAM  
+<span class="secondary">BLZ:</span> 16020086  
+<span class="secondary">Konto-Nr:</span> 4910173974  
+<span class="secondary">IBAN:</span> DE09160200864910173974  
+<span class="secondary">BIC:</span> HYVEDEMM470  
+<span class="secondary">Gläubiger-Identifikationsnr:</span> DE780CB00000667089
+
+<a class="external" href="http://www.disclaimer.de/disclaimer.htm?farbe=000000/FAFAFA/FF9933/FF9933" target="_blank">Haftungsausschluss</a>
