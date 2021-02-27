@@ -13,6 +13,7 @@
   --box-content-margin: 1em;
 
   --highlight-color: #FF9900; /* Stations-Orange */
+  --secondary-highlight-color: #CCCC99;
   --link-color: #FF9900;
   
   --font-sans-serif: Helvetica, Arial, sans-serif;
@@ -86,6 +87,14 @@ footer a:hover, footer a:active {
 h1,h2,h3,h4,h5,h6 {
   color: var(--highlight-color);
   font-family: var(--font-monospace);
+}
+
+.highlight {
+  color: var(--highlight-color);
+}
+
+.secondary {
+  color: var(--secondary-highlight-color);
 }
 
 a:link, a:visited {
@@ -438,4 +447,9 @@ a.button.full-width {
 
 .box-contents > :last-child {
   margin-bottom: 0;
+}
+
+a.external::before {
+  content: '➝ ';
+  color: var(--default-text-color);
 }
