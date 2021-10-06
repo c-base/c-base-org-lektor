@@ -20,7 +20,7 @@
     <label class="menu-icon" for="menu-button"><span class="navicon"></span></label>
     <ul class="menu">
   {%- for label, path in bag('navigation').items() %}
-      <li{% if this.is_child_of(path) %} class="active"{% endif %}><a href="{{ path|url }}">{{ label }}</a></li>
+      <li{% if this.is_child_of(path) %} class="active"{% endif %}><a href="{% if path.startswith('http') %}{{ path }}{% else %}{{ path|url }}{% endif %}">{{ label }}</a></li>
   {%- endfor %}
     </ul>
   </nav>
