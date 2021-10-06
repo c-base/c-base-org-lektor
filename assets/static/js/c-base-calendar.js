@@ -158,13 +158,13 @@ $(document).ready(function () {
     navLinks: true,
     eventSources: [
       {
-        events: [], // window.c_base_events,
+        events: window.c_base_events,
         color: CALENDAR_COLORS.c_base_events
       }, {
-        events: [], // window.c_base_regulars,
+        events: window.c_base_regulars,
         color: CALENDAR_COLORS.c_base_regulars
       }, {
-        events: [], // window.c_base_seminars,
+        events: window.c_base_seminars,
         color: CALENDAR_COLORS.c_base_seminars
       }, {
         events: window.c_base_online,
