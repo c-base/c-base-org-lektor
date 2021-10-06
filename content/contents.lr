@@ -9,19 +9,21 @@ text:
 
   <!-- Biohazard -->
   <section class="content-block">
-    <div class="center"><img src="static/img/cbiohazard.png" width="220"></div>
+    <div class="center"><img src="./cbiohazard2g.png" width="220"></div>
     <div class="ugly-box box-contents">
-      <p class="center bold">c-base is closed!</p>
-      <p>Due to a newly discovered fast spreading virus the spacestation will cancel all planned events and close down until further notice. Please check <a href="https://logbuch.c-base.org/archives/4933">this page for details</a>.
-         Stay safe, wash your tentacles! Thank you for considering the safety-instructions.
-      </p>
-     	<hr>
-      <p class="center bold">Die c-base ist geschlossen!</p>
-      <p>Aufgrund eines neuartigen, sich schnell ausbreitenden Virus sagt die  Raumstation bis auf weiteres alle öffentlichen Veranstaltungen ab und bleibt geschlossen. Aktuelle Details auf <a href="https://logbuch.c-base.org/archives/4933">dieser Seite</a>.
-         Passt auf Euch auf, wascht Eure Tentakel! Danke für die Beachtung der Sicherheitshinweise.
-      </p>
-      <p class="center">
-        <a class="ugly-button" href="https://logbuch.c-base.org/archives/4933">DETAILS</a>
+      <p class="center bold">c-base opens under "2G" rules</p>
+      <p>Vaccinated or recovered beings only! Humanoids that want to enter c-base must show:
+      <ul>
+          <li>digital european certificate of vaccination (QR code), <a href="https://www.digitaler-impfnachweis-app.de/en">more info here...</a>
+          <li>your picture ID (passport, government ID, etc.)</li>
+      </ul>
+      <p class="center bold" style="margin-top:30px; border-top: 1px solid yellow; padding-top: 35px;">c-base öffnet unter „2G“-Bedingungen</p>
+      <p>
+      Zutritt nur für geimpfte oder genesene Humanoiden! Zutritt nur mit:
+      <ul>
+        <li>digitalem, europäischen Impf- zertifikat (QR-Code), <a href="https://www.digitaler-impfnachweis-app.de/">mehr Infos hier...</a></li>
+        <li>gültigem Lichtbild-Ausweis (Perso, Reisepass etc.)</li>
+      </ul>
       </p>
     </div>
   </section>
