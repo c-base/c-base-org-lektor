@@ -14,13 +14,13 @@ $(document).ready(function () {
     locale: 'de',
     eventSources: [
       {
-        events: [] // window.c_base_events
+        events: window.c_base_events
       }, 
       {
-        events: [] // window.c_base_regulars
+        events: window.c_base_regulars
       }, 
       {
-        events: [] // window.c_base_seminars
+        events: window.c_base_seminars
       }, 
       {
         events: window.c_base_online
