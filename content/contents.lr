@@ -9,21 +9,29 @@ text:
 
   <!-- Biohazard -->
   <section class="content-block">
-    <div class="center"><img src="./cbiohazard2g.png" width="220"></div>
+    <div class="center"><img src="./cbiohazard2gplus.png" width="220"></div>
     <div class="ugly-box box-contents">
-      <p class="center bold">c-base opens under "2G" rules</p>
+      <p class="center bold">c-base operates under "2G+" rules</p>
       <p>Vaccinated or recovered beings only! Humanoids that want to enter c-base must show:
       <ul>
-          <li>digital european certificate of vaccination (QR code), <a href="https://www.digitaler-impfnachweis-app.de/en">more info here...</a>
-          <li>your picture ID (passport, government ID, etc.)</li>
+        <li>digital european certificate of vaccination (QR code), <a href="https://www.digitaler-impfnachweis-app.de/en">more info here...</a>
+        <li>your picture ID (passport, government ID, etc.)</li>
+        <li>a negative test result (not older than 24 hours). If you have received a "Booster" vaccination, you do not need a test!</li>
       </ul>
-      <p class="center bold" style="margin-top:30px; border-top: 1px solid yellow; padding-top: 35px;">c-base öffnet unter „2G“-Bedingungen</p>
+      <p>Inside c-base you need to wear a medical or FFP2 mask (or better) inside c-base.
+      Contact information is collected at check-in and is for Corona tracing purposes only.
+      Here is the offical <a href="https://www.berlin.de/corona/massnahmen/verordnung/#paragraph18">Berlin Corona measures</a> (Paragraph §18) (in German).</p>
+      <p class="center bold" style="margin-top:30px; border-top: 1px solid yellow; padding-top: 35px;">c-base öffnet unter „2G+“-Bedingungen</p>
       <p>
       Zutritt nur für geimpfte oder genesene Humanoiden! Zutritt nur mit:
       <ul>
-        <li>digitalem, europäischen Impf- zertifikat (QR-Code), <a href="https://www.digitaler-impfnachweis-app.de/">mehr Infos hier...</a></li>
+        <li>digitalem, europäischen Impfzertifikat (QR-Code), <a href="https://www.digitaler-impfnachweis-app.de/">mehr Infos hier...</a></li>
         <li>gültigem Lichtbild-Ausweis (Perso, Reisepass etc.)</li>
+        <li>einem negatives Test-Ergebnis, das nicht älter als 24 Stunden ist. Wenn du eine Auffrischungs-Impfung hast (Booster), dann brauchst du keinen Test.</li>
       </ul>
+      <p>In der c-base musst du eine medizinische Maske oder eine FFP2-Maske (oder besser) tragen.
+      Kontaktdaten werden beim Eingang aufgenommen und dienen ausschließlich der Corona-Nachverfolgung.
+      Hier geht es zur <a href="https://www.berlin.de/corona/massnahmen/verordnung/#paragraph18">Berliner Corona-Maßnahmen-Verordnung</a> (Paragraph §18, Gastronomie).
       </p>
     </div>
   </section>
