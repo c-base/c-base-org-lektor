@@ -5,4 +5,4 @@ name = c-base-org-lektor
 name = webserver.c-base.org
 enabled = yes
 default = yes
-target = rsync://www-deploy@217.197.86.179/var/www/c-base.org/www-deploy/
+target = rsync://www-deploy@webserver.c-base.org/var/www/c-base.org/www-deploy/
