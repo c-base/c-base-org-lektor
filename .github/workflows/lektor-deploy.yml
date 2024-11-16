@@ -33,6 +33,7 @@ jobs:
       run: |
         mkdir -p ~/.ssh
         ssh-keyscan 217.197.86.179 >> ~/.ssh/known_hosts
+        ssh-keyscan webserver.c-base.org >> ~/.ssh/known_hosts
         ssh-agent -a $SSH_AUTH_SOCK > /dev/null
         ssh-add - <<< "${{ secrets.LEKTOR_DEPLOY_PRODUCTION_KEY }}"
         lektor deploy
