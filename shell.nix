@@ -9,7 +9,7 @@ pkgs.mkShell {
   ];
 
   shellHook = ''
-    poetry install
+    poetry install --no-root
     source .venv/bin/activate
   '';
 }
