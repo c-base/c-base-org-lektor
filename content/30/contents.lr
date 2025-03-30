@@ -1,0 +1,12 @@
+_model: page
+---
+title: 30 Jahre c-base e.V.
+---
+content: 
+
+#### markdown ####
+text:
+
+Wir feiern 30 Jahre c-base e.V.
+---
+_template: 30jahre-cbase.html

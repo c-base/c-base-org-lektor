@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+
+{% block head %}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+<style>
+    .hero-wrapper {
+        text-align: center;
+        font-weight: bold;
+        z-index: 80;
+        padding: 30px 0px 30px 0px;
+        rotate: -15deg;
+        margin-top: 25px;
+        margin-bottom: 100px;
+    }
+    .hero-title {
+        margin: 0px;
+        color: rgb(255, 153, 0);
+        font-size: 15vw;
+        line-height: 0.8;
+
+        font-family: "League Spartan", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 900;
+        font-style: black;
+    }
+    .hero-subtitle {
+        margin: 0px 0px 0px 10px;
+        color: rgb(255, 153, 0);
+        font-size: 5vw;
+
+        font-family: "League Spartan", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 900;
+        font-style: black;
+    }
+</style>
+{% endblock %}
+
+{% block body %}
+
+<div class="hero-wrapper">
+    <h1 class="hero-title">30&nbsp;Jahre <nobr>c-base</nobr></h1>
+    <h2 class="hero-subtitle">Fall 2025</h2>
+</div>
+
+  {{ this.content }}
+{% endblock %}
