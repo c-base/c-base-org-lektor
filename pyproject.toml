@@ -6,7 +6,8 @@ authors = ["Uwe Kamper <me@uwekamper.de>"]
 license = "MIT"
 
 [tool.poetry.dependencies]
-python = "^3.7"
+python = "^3.9"
+setuptools = "^78.1.0"
 lektor = "^3.3.7"
 
 [tool.poetry.dev-dependencies]
