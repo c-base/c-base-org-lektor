@@ -1,6 +1,16 @@
 [project]
 name = c-base-org-lektor
 
+[alternatives.de]
+name = Deutsch
+primary = yes
+locale = de_DE
+
+[alternatives.en]
+name = English
+primary = yes
+locale = en_US
+
 [servers.production]
 name = webserver.c-base.org
 enabled = yes
