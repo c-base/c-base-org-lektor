@@ -15,26 +15,52 @@
         margin-bottom: 100px;
     }
     .hero-title {
+        font-size: 12rem;
         margin: 0px;
         color: rgb(255, 153, 0);
-        font-size: 12rem;
         line-height: 0.75;
-
         font-family: "League Spartan", sans-serif;
         font-optical-sizing: auto;
         font-weight: 900;
         font-style: black;
     }
     .hero-subtitle {
+        font-size: 3rem;
         margin: 0px 0px 0px 10px;
         color: rgb(255, 153, 0);
-        font-size: 3rem;
-
         font-family: "League Spartan", sans-serif;
         font-optical-sizing: auto;
         font-weight: 900;
         font-style: black;
     }
+    @media screen and (max-width:10px) {
+        /* Zusätzliche Regeln für kleinere Monitore  */
+        .hero-title {
+            font-size: 10rem;
+        }
+        .hero-subtitle {
+            font-size: 4rem;
+        }
+    }
+    @media screen and (max-width:768px) {
+        /* Zusätzliche Regeln für kleinere Monitore  */
+        .hero-title {
+            font-size: 8rem;
+        }
+        .hero-subtitle {
+            font-size: 4rem;
+        }
+    }
+    @media screen and (max-width:450px) {
+        /* Zusätzliche Regeln noch kleinere Monitore  */
+        .hero-title {
+            font-size: 5rem;
+        }
+        .hero-subtitle {
+            font-size: 2rem;
+        }
+    }
+
     .event-list {
         display: flex;
         width: 100%;
