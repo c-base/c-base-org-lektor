@@ -1,14 +1,18 @@
 [project]
 name = "c-base-org-lektor"
-version = "0.1.0"
+version = "1.0.0"
 description = "A c-base.org based in the lektor static site generator."
-authors = [{ name = "Uwe Kamper", email = "me@uwekamper.de" }]
+authors = [{ name = "Uwe Kamper", email = "uk@c-base.org" }]
 requires-python = ">=3.9"
 license = "MIT"
 dependencies = [
     "setuptools >=78.1.0, <79",
-    "lektor >=3.3.7, <4",
+    "Lektor >=3.3.12, <4",
 ]
+
+# Needed for `uv pip install .` to work without a real Python package
+[tool.setuptools]
+py-modules = []
 
 [dependency-groups]
 dev = [

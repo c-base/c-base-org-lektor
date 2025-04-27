@@ -4,12 +4,12 @@ pkgs.mkShell {
 
   packages = [
     pkgs.python312
-    pkgs.poetry
+    pkgs.uv
     pkgs.git
   ];
 
   shellHook = ''
-    poetry install --no-root
+    uv pip install .
     source .venv/bin/activate
   '';
 }

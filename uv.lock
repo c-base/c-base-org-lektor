@@ -25,7 +25,7 @@ wheels = [
 
 [[package]]
 name = "c-base-org-lektor"
-version = "0.1.0"
+version = "1.0.0"
 source = { virtual = "." }
 dependencies = [
     { name = "lektor" },
@@ -40,7 +40,7 @@ dev = [
 
 [package.metadata]
 requires-dist = [
-    { name = "lektor", specifier = ">=3.3.7,<4" },
+    { name = "lektor", specifier = ">=3.3.12,<4" },
     { name = "setuptools", specifier = ">=78.1.0,<79" },
 ]
 
@@ -250,7 +250,7 @@ wheels = [
 
 [[package]]
 name = "lektor"
-version = "3.3.7"
+version = "3.3.12"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "babel" },
@@ -260,17 +260,19 @@ dependencies = [
     { name = "flask" },
     { name = "inifile" },
     { name = "jinja2" },
+    { name = "markupsafe" },
     { name = "mistune" },
     { name = "pip" },
     { name = "python-slugify" },
+    { name = "pytz" },
     { name = "requests" },
     { name = "setuptools" },
     { name = "watchdog" },
     { name = "werkzeug" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/43/ea/1e737290355124893f9648d12a101c9e65f73624b691ce4e627ec790c056/Lektor-3.3.7.tar.gz", hash = "sha256:db2eb3cf360dc187500f347f83ef40bd6093b5e07c3f511867bf84215d2d63f1", size = 2344349 }
+sdist = { url = "https://files.pythonhosted.org/packages/ea/8a/c2485e3e6777c409081eb5517a3a97743aac8ea000eef95230371079188f/lektor-3.3.12.tar.gz", hash = "sha256:a856e5f94f77f8c960f6c3f21675338ac32e205bf035582063b17ea137035b03", size = 2350688 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/f7/d7/25822f3ea010c5daa01a2b32e4671e7f6a3918940515117ecd837c8c1e0f/Lektor-3.3.7-py3-none-any.whl", hash = "sha256:311c33a41fd1eece0f73841d780a94c580969c06a42fa69ec2378dfa7d3ce44f", size = 1703100 },
+    { url = "https://files.pythonhosted.org/packages/00/ae/20001dbf0db5b9583fd6fe04334ef74fa286a3a7b8cfb1e9f4a985f376a2/Lektor-3.3.12-py3-none-any.whl", hash = "sha256:d5667647bd784ae5216fbc1a32ea0022ed0b559d9d1967744675aa39ece72075", size = 1704710 },
 ]
 
 [[package]]
