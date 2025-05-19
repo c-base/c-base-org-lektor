@@ -14,35 +14,90 @@
         margin-top: 25px;
         margin-bottom: 100px;
     }
-    .hero-title-sm {
+    .hero-title {
+        font-size: {% if this.title_size %}{{ this.title_size }}{% else %}10rem{% endif %};
         margin: 0px;
         color: rgb(255, 153, 0);
-        font-size: 10rem;
-        line-height: 0.75;
-
+        line-height: 0.8;
         font-family: "League Spartan", sans-serif;
         font-optical-sizing: auto;
         font-weight: 900;
         font-style: black;
     }
     .hero-subtitle {
+        font-size: 3rem;
         margin: 0px 0px 0px 10px;
         color: rgb(255, 153, 0);
-        font-size: 2rem;
-
         font-family: "League Spartan", sans-serif;
         font-optical-sizing: auto;
         font-weight: 900;
         font-style: black;
     }
+    @media screen and (max-width:992px) {
+        /* Zusätzliche Regeln für kleinere Monitore  */
+        .hero-title {
+            font-size: 10rem;
+        }
+        .hero-subtitle {
+            font-size: 3rem;
+        }
+    }
+    @media screen and (max-width:768px) {
+        /* Zusätzliche Regeln für kleinere Monitore  */
+        .hero-title {
+            font-size: 8rem;
+        }
+        .hero-subtitle {
+            font-size: 2rem;
+        }
+    }
+    @media screen and (max-width:450px) {
+        /* Zusätzliche Regeln noch kleinere Monitore  */
+        .hero-title {
+            font-size: 5rem;
+        }
+        .hero-subtitle {
+            font-size: 1.5rem;
+        }
+    }
+
+    .event-list {
+        display: flex;
+        width: 100%;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        gap: 10px 30px;
+        margin-bottom: 200px;
+    }
+    .event-item {
+        padding: 5px 15px;
+        flex-grow: 0;
+        width: 200px;
+        min-height: 250px;
+        border: #ff9900 solid 2px;
+        transition-duration: 0.25s;
+        transition-property: box-shadow;
+    }
+    .event-item:hover {
+        -webkit-box-shadow:0px 0px 128px 10px rgba(255,153,0,0.9);
+        -moz-box-shadow: 0px 0px 128px 10px rgba(255,153,0,0.9);
+        box-shadow: 0px 0px 128px 10px rgba(255,153,0,0.9);
+    }
+    .event-date {
+        font-size: smaller;
+    }
+    .event-title {
+        font-family: "League Spartan", sans-serif;
+    }
+    
 </style>
 {% endblock %}
 
 {% block body %}
 
 <div class="hero-wrapper">
-    <h1 class="hero-title-sm">{{ this.title }}</h1>
-    <h2 class="hero-subtitle">{{ this.date }}</h2>
+    <h1 class="hero-title">{{ this.title }}</h1>
+    <h2 class="hero-subtitle">{{ this.date|dateformat("EEEE, dd.MM.YYYY", locale="de_DE") }}</h2>
 </div>
 <div>
     <a href="/30/"><< go back</a>
@@ -54,7 +109,9 @@
     Eventpat(e/in): {{ this.pate }}
 </div>
 
+{% if this.calendar_link %}
 <div>
     Event <a href="{{ this.calendar_link }}">im Kalender anzeigen</a>.
 </div>
+{% endif %}
 {% endblock %}

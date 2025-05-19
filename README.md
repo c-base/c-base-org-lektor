@@ -5,12 +5,14 @@
 
 (For Windows, see more detailed instructions below)
 
-  - Install poetry (see: https://python-poetry.org/ )
+  - Install uv
   - clone this repository
-  - run `poetry install` inside the repository's root folder
+  - run `uv sync --all-extras --dev` inside the repository's root folder
+
+Lektor comes with a built-in GUI to edit the site's contents. For this, the development server is needed.
 
 To start the development server:
-  - run it directly inside the poetry virtual env: `poetry run lektor server`
+  - run it directly inside the `uv` virtual env: `uv run lektor server --browse`
   - Otherwise you can activate the virtuel env by running `poetry shell` and then run `lektor server`.
 
 
@@ -23,20 +25,22 @@ To start the development server:
 - get and install Visual Studio Code: https://code.visualstudio.com/
   - On first run, install the Microsoft Python extension via the Extensions menu (icon bar on the left side)
 
-- install Poetry via this command in the Windows PowerShell (please check https://python-poetry.org to make sure this is still the recommended method):
+- install ub via the command in the Windows PowerShell described here: https://docs.astral.sh/uv/getting-started/installation/#__tabbed_1_2
 
 ``` 
-(Invoke-WebRequest -Uri https://install.python-poetry.org -UseBasicParsing).Content | py -
+https://docs.astral.sh/uv/getting-started/installation/#__tabbed_1_2
 ```
+
+The following steps might be necessary on Windows but have not been recently tested:
 
 - Add the poetry installation directory to the PATH environment variable (German "Umgebungsvariablen"):
   - Add the following entry to %PATH%: `%APPDATA%\Python\Scripts`
-- Allow the execution of Powershell-Scripts (this is needed to activate the poetry virtualenv)
+- Allow the execution of Powershell-Scripts (this is needed to activate the virtualenv)
   ``Set-ExecutionPolicy -ExecutionPolicy Unrestriced 
 - Set the location where virtualenvs will be created to be `$project_dir/.venv`:
    - `poetry config virtualenvs.in-project true`
 - Use VS Code to clone the project to a local project directory
-- After cloning, open a new Terminal windows in VSCode and run `poetry install` in the VS Code terminal. That should create the venv.
+- After cloning, open a new Terminal windows in VSCode and run `uv sync --all-extras --dev` in the VS Code terminal. That should create the venv.
 
 ## Create `launch.json`:
 

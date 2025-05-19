@@ -65,15 +65,16 @@
         display: flex;
         width: 100%;
         flex-flow: row wrap;
-        justify-content: flex-start;
-        gap: 10px 30px;
+        justify-content: space-between;
+        gap: 20px 15px;
         margin-bottom: 200px;
     }
     .event-item {
         padding: 5px 15px;
         flex-grow: 0;
-        width: 200px;
+        width: 164px;
         min-height: 250px;
+        background: #000;
         border: #ff9900 solid 2px;
         transition-duration: 0.25s;
         transition-property: box-shadow;
@@ -110,7 +111,7 @@
 
         <a href="{{ child|url }}">  
             <div class="event-item">
-                <p class="event-date">{{ child.date|dateformat("EEEE, dd.MM.YYYY", locale="de_DE") }}</p>
+                <p class="event-date">{{ child.date|dateformat("EE, dd.MM.YYYY", locale="de_DE") }}</p>
                 <h3 class="event-title">{{ child.title }}</h3>
             </div>
         </a>
