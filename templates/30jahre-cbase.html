@@ -60,20 +60,17 @@
             font-size: 1.5rem;
         }
     }
-
     .event-list {
+        margin: 0 auto;
         display: flex;
-        width: 100%;
         flex-flow: row wrap;
-        justify-content: space-between;
-        gap: 20px 15px;
+        gap: 20px 32px;
         margin-bottom: 200px;
     }
     .event-item {
         z-index: 0;
         padding: 0;
         flex-grow: 0;
-        
         background: yellow;
         border: #ff9900 solid 2px;
         transition-duration: 0.25s;
@@ -115,6 +112,7 @@
 <section>
     <h2>Events</h2>
 
+    <div class="event-container">
     <div class="event-list">
     {% for child in this.children %}
 
@@ -128,6 +126,7 @@
         </a>
     
     {% endfor %}
+    </div>
     </div>
   
 </section>
