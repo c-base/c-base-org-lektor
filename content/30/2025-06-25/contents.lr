@@ -1,12 +1,12 @@
 _model: event
 ---
-date: 2025-09-25
+date: 2025-06-25
 ---
 body:
 
 Diverse Stammtische
 z.B. Go, Pentagame, Ingress, Lockpicking & friends
 ---
-title: c-lounge
----
 calendar_link: https://www.c-base.org/calendar/#view=month&date=2025-09-01&event=43da6b0d-6d61-4ece-9255-70b36a47a455-65
+---
+title: c-lounge
