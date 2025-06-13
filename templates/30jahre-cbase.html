@@ -70,19 +70,28 @@
         margin-bottom: 200px;
     }
     .event-item {
-        padding: 5px 15px;
+        z-index: 0;
+        padding: 0;
         flex-grow: 0;
-        width: 164px;
-        min-height: 250px;
-        background: #000;
+        
+        background: yellow;
         border: #ff9900 solid 2px;
         transition-duration: 0.25s;
         transition-property: box-shadow;
     }
+    .event-item-content-wrapper {
+        position: relative;   /* without this, the z-index is ignored. */
+        z-index: 100;   /* without the z-index, the box-shadow will overlay on the card content */
+        padding: 5px 15px;
+        width: 164px;
+        min-height: 250px;
+        background: #000;
+    }
     .event-item:hover {
-        -webkit-box-shadow:0px 0px 128px 10px rgba(255,153,0,0.9);
-        -moz-box-shadow: 0px 0px 128px 10px rgba(255,153,0,0.9);
-        box-shadow: 0px 0px 128px 10px rgba(255,153,0,0.9);
+        z-index: 0;
+        -webkit-box-shadow:0px 0px 128px 8px rgba(255,153,0,0.50);
+        -moz-box-shadow: 0px 0px 128px 8px rgba(255,153,0,0.50);
+        box-shadow: 0px 0px 128px 8px rgba(255,153,0,0.50);
     }
     .event-date {
         font-size: smaller;
@@ -111,10 +120,13 @@
 
         <a href="{{ child|url }}">  
             <div class="event-item">
-                <p class="event-date">{{ child.date|dateformat("EE, dd.MM.YYYY", locale="de_DE") }}</p>
-                <h3 class="event-title">{{ child.title }}</h3>
+                <div class="event-item-content-wrapper">
+                    <p class="event-date">{{ child.date|dateformat("EE, dd.MM.YYYY", locale="de_DE") }}</p>
+                    <h3 class="event-title">{{ child.title }}</h3>
+                </div>
             </div>
         </a>
+    
     {% endfor %}
     </div>
   
