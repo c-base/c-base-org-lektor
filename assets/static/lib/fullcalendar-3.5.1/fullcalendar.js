@@ -17601,6 +17601,7 @@ var ListViewGrid = Grid.extend({
 				// and mutate the latest seg to the be the end.
 				if (
 					!seg.isEnd && !footprint.isAllDay &&
+					dayIndex + 1 < dayRanges.length &&
 					footprint.unzonedRange.endMs < dayRanges[dayIndex + 1].startMs + view.nextDayThreshold
 				) {
 					seg.endMs = footprint.unzonedRange.endMs;
