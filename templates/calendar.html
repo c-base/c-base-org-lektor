@@ -1,7 +1,5 @@
 {% extends "layout.html" %}
 {% block head %}
-  <link rel="stylesheet" href="{{ '/static/lib/fullcalendar-3.5.1/fullcalendar.css'|asseturl }}">
-  <link rel="stylesheet" href="{{ '/static/lib/css/jquery-ui.min.css'|asseturl }}">
   <link rel="stylesheet" href="{{ '/static/css/calendar.css'|asseturl }}">
 {% endblock %}
 
@@ -97,15 +95,14 @@
   <script src="{{ '/static/lib/micromodal.min.js'|asseturl }}"></script>
   <script src="{{ '/static/lib/purify.min.js'|asseturl }}"></script>
   <script src="{{ '/static/lib/marked.min.js'|asseturl }}"></script>
-  <script src="{{ '/static/lib/jquery-3.1.1.min.js'|asseturl }}"></script>
-  <script src="{{ '/static/lib/moment-with-locales.js'|asseturl }}"></script>
-  <script src="{{ '/static/lib/fullcalendar-3.5.1/fullcalendar.min.js'|asseturl }}"></script>
-  <script src="{{ '/static/lib/fullcalendar-3.5.1/locale-all.js'|asseturl }}"></script>
+  <script src="{{ '/static/lib/fullcalendar-6.1.17/index.global.min.js'|asseturl }}"></script>
+
 {#
   <script src="{{ '/static/calendar-data/events.js'|asseturl }}"></script>
   <script src="{{ '/static/calendar-data/errors.js'|asseturl }}"></script>
 #}
   <script src="https://www.c-base.org/calendar/exported/events.js"></script>
   <script src="https://www.c-base.org/calendar/exported/errors.js"></script>
+
   <script src="{{ '/static/js/c-base-calendar.js'|asseturl }}"></script>
 {% endblock %}

@@ -150,44 +150,58 @@ main {
   }
 }
 
-#upcoming table {
-  width: 100%;
+#upcoming a:hover {
+  text-decoration: none;
 }
 
-#upcoming .fc-list-heading .ui-widget-header {
+#upcoming .fc-upcoming-view, #upcoming th, #upcoming td {
+  border: none;
+  background: none;
+}
+
+#upcoming table {
+  border-collapse: separate;
+}
+
+#upcoming th, #upcoming td {
+  vertical-align: top;
+  padding: 0.3em 0;
+}
+
+#upcoming .fc-list-day th {
   padding-top: 1em;
-  font-weight: bold;
   border-bottom: 1px solid var(--default-text-color);
 }
 
-#upcoming td {
-  vertical-align: top;
-  padding-top: 0.3em;
-  padding-bottom: 0.3em;
-}
-
-#upcoming td.fc-list-item-time {
-  padding-right: 0.6em;
-}
-
-#upcoming .fc-list-heading-main {
+#upcoming .fc-list-day-cushion {
+  font-weight: bold;
   color: var(--highlight-color);
+  padding: 0;
+  background: none;
+} 
+
+#upcoming td.fc-list-event-time {
+  padding-right: 1em;
 }
 
-#upcoming .fc-list-heading-alt {
-  color: var(--highlight-color);
-  float: right;
+#upcoming td.fc-list-event-graphic {
+  display: none;
 }
 
-#upcoming td.fc-list-item-title {
+#upcoming td.fc-list-event-title {
   width: 90%;
 }
 
-#upcoming .fc-list-item-title a {
+#upcoming .fc-list-event-title a {
   color: var(--highlight-color);
   cursor: pointer;
 }
 
+#upcoming .fc-list-event-title a:hover {
+  text-decoration: underline;
+}
+
 #upcoming .fc-list-empty {
   margin-top: 1em;
+  background: none;
 }
