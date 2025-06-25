@@ -1,44 +1,48 @@
-function fixListHeight() {
-  $('#upcoming .fc-scroller').css('height', '');
+function toDateString(date) {
+  // YYYY-MM-DD
+  return date.getFullYear().toString() + '-' + (date.getMonth() + 1).toString().padStart(2, '0') + '-' + date.getDate().toString().padStart(2, '0');
 }
 
-$(document).ready(function () {
-  const calendar = $('#upcoming');
-  calendar.fullCalendar({
-    defaultView: 'upcoming',
-    noEventsMessage: 'Keine Veranstaltungen in den nächsten Tagen 😢',
-    theme: true,
-    header: false,
-    eventTimeFormat: 'HH:mm',
+document.addEventListener('DOMContentLoaded', function() {
+  const calendarEl = document.getElementById('upcoming');
+  const calendar = new FullCalendar.Calendar(calendarEl, {
+    initialView: 'upcoming',
+    noEventsText: 'Keine Veranstaltungen in den nächsten Tagen 😢',
+    headerToolbar: false,
+    eventTimeFormat: { hour: '2-digit', minute: '2-digit', hour12: false },
     displayEventEnd: false,
+    nextDayThreshold: '06:00:00',
     locale: 'de',
+    height: 'auto',
     eventSources: [
       {
-        events: window.c_base_events
+        events: window.c_base_events,
       }, 
       {
-        events: window.c_base_regulars
+        events: window.c_base_regulars,
       }, 
       {
-        events: window.c_base_seminars
+        events: window.c_base_seminars,
       }, 
       {
-        events: window.c_base_online
-      }
+        events: window.c_base_online,
+      },
     ],
-    eventClick: function(calendarEvent, jsEvent, view) {
-      const date = calendarEvent.start.format('YYYY-MM-DD');
-      window.location.href = '/calendar/#view=month&date=' + date + '&event=' + calendarEvent.uid;
+    eventClick: function(info) {
+      const calendarEvent = info.event;
+      const date = toDateString(calendarEvent.start);
+      const uid = calendarEvent.extendedProps.uid;
+      window.location.href = '/calendar/#view=month&date=' + date + '&event=' + uid;
     },
     views: {
       upcoming: {
         type: 'list',
-        listDayFormat: 'dddd',
-        listDayAltFormat: 'LL',
-        duration: { days: 7 }
-      }
+        listDayFormat: { weekday: 'long' },
+        listDaySideFormat: { month: 'long', day: 'numeric', year: 'numeric' },
+        duration: { days: 7 },
+      },
     },
-    eventAfterAllRender: fixListHeight,
-    windowResize: fixListHeight
   });
+
+  calendar.render();
 });
