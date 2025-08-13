@@ -2,8 +2,20 @@ _model: event
 ---
 date: 2025-10-04
 ---
-body: Eine Konferenz zum Fediverse mit Workshops und Vorträgen für Interessierte, Neulinge und alte Hasen.
+body:
+
+Taucht ein in die spannende Welt des Fediverse! 🌐✨
+
+Egal, ob du Neuling oder schon ein alter Hase bist – dieser Tag ist für alle! Auf dich warten inspirierende Workshops und spannende Vorträge, die dir neue Perspektiven auf das Fediverse eröffnen. 🤖💡
+
+Nutze die Gelegenheit, dich mit anderen Interessierten zu vernetzen, neue Tools zu entdecken und tiefer in die faszinierende Welt des dezentralen Internets einzutauchen. 🚀
+
+Wir freuen uns auf dich und einen kreativen Austausch in einer offenen und freundlichen Atmosphäre! 😄
+
+https://berlinfedi.day/
 ---
 title: Berlin Fediverse Day
 ---
 pate: poo, waldstepper
+---
+calendar_link: https://c-base.org/calendar/#view=month&date=2025-09-01&event=77c54b81-444c-48b1-986f-c3dcc1670f0b
