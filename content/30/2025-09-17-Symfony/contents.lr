@@ -1,0 +1,11 @@
+_model: event
+---
+date: 2025-09-17
+---
+body: Es wird zwei Vorträge zum Thema Software-Entwicklung an Board der c-base mit dem Symfony Framework geben. Darunter auch die Geschichte des c-base Artefact Guides.
+---
+calendar_link: https://c-base.org/calendar/#view=month&date=2025-09-01&event=bb175624-cb8f-4813-8569-b47a6da32da2
+---
+title: 15 Jahre Symfony Usergroup @ c-base
+---
+title_size: 6rem
