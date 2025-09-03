@@ -2,7 +2,11 @@ _model: event
 ---
 date: 2025-09-19
 ---
-body: Games Night ab 16 Uhr mit den stationsüblichen Spielen wie CS, soul calibour, quake, worms, the finals, … :)
+body:
+
+Ab 16 Uhr laden wir zur Games Night ein – mit stationsüblichen Spielen und gemütlicher Atmosphäre. Weitere Informationen findet ihr im Wiki:
+
+https://wiki.c-base.org/dokuwiki/c-games_night:start
 ---
 title: Games Night
 ---
