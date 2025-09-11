@@ -3,8 +3,10 @@ _model: event
 date: 2025-09-26
 ---
 body:
-![](https://logbuch.c-base.org/wp-content/uploads/2025/08/neurobasser_web.jpeg)
 
+<p class="center">
+  <img src="https://logbuch.c-base.org/wp-content/uploads/2025/08/neurobasser_web.jpeg" style="width: min(100%, 600px);">
+</p>
 
 Our beloved spacestation c-base turns 30 years, just like the rasta colony “Zion” in William Gibson's groundbreaking cyberpunk novel “Neuromancer”. Therefore we want to celebrate in style with:
 * Hillbilly Hifi
@@ -17,11 +19,7 @@ You can also play the original Neuromancer video game (1988) and flip through a 
 More info: [entry in c-base logbook](https://logbuch.c-base.org/archives/5608)
 
 ---
-title:
-
-neurobasser
-
-TBA
+title: neurobasser
 ---
 pate: ligi
 ---
