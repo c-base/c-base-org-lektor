@@ -2,7 +2,6 @@ const CALENDAR_COLORS = {
   'c_base_events': '#14105D',
   'c_base_regulars': '#055D53',
   'c_base_seminars': '#145D1B',
-  'c_base_online': '#5D1459',
 };
 
 document.addEventListener('DOMContentLoaded', function() {

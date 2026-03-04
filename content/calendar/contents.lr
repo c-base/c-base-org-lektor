@@ -13,6 +13,5 @@ footer:
     <li>Nur Mainhall-Events / events in mainhall only: <tt><a href="/calendar/exported/events.ics">https://www.c-base.org/calendar/exported/events.ics</a></tt></li>
     <li>Wiederkehrende Events / regular events: <tt><a href="/calendar/exported/regulars.ics">https://www.c-base.org/calendar/exported/regulars.ics</a></tt></li>
     <li>Seminarraum / seminar room: <tt><a href="/calendar/exported/seminars.ics">https://www.c-base.org/calendar/exported/seminars.ics</a></tt></li>
-    <li>Online / online-only events: <tt><a href="/calendar/exported/online.ics">https://www.c-base.org/calendar/exported/online.ics</a></tt></li>
   </ul>
 </details>
