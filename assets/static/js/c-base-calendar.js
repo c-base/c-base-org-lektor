@@ -4,11 +4,17 @@ const CALENDAR_COLORS = {
   'c_base_seminars': '#145D1B',
 };
 
+const DISPLAY_TIMEZONE = 'Europe/Berlin';
+
 document.addEventListener('DOMContentLoaded', function() {
+
+  // Note: For all-day events Event.start and Event.end are the start of the respective UTC day, not start of the day
+  // in the display time zone (or the user's local time zone). So we'll use a date formatter configured for UTC.
   const dateFormatter = new Intl.DateTimeFormat('de', {
     year: 'numeric',
     month: 'long',
     day: 'numeric',
+    timeZone: 'UTC',
   });
   const dateTimeFormatter = new Intl.DateTimeFormat('de', {
     year: 'numeric',
@@ -17,6 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
     hour: '2-digit',
     minute: 'numeric',
     hour12: false,
+    timeZone: DISPLAY_TIMEZONE,
   });
 
   const initialViewState = getViewStateFromFragment();
@@ -28,6 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   const calendarElement = document.getElementById('calendar');
   const calendar = new FullCalendar.Calendar(calendarElement, {
+    timeZone: DISPLAY_TIMEZONE,
     initialView: startView,
     initialDate: startDate,
     eventTimeFormat: { hour: '2-digit', minute: '2-digit', hour12: false },
@@ -158,7 +166,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
   function toDateString(date) {
     // YYYY-MM-DD
-    return date.getFullYear().toString() + '-' + (date.getMonth() + 1).toString().padStart(2, '0') + '-' + date.getDate().toString().padStart(2, '0');
+    return date.getUTCFullYear().toString() +
+        '-' +
+        (date.getUTCMonth() + 1).toString().padStart(2, '0') +
+        '-' +
+        date.getUTCDate().toString().padStart(2, '0');
   }
 
   function updateFragmentWithViewState(uid = null) {
@@ -205,20 +217,37 @@ document.addEventListener('DOMContentLoaded', function() {
     const eventStartElement = document.getElementById('event-start');
     const eventEndElement = document.getElementById('event-end');
 
-    if (calendarEvent.allDay && calendarEvent.end - calendarEvent.start < 36 * 60 * 60 * 1000) {
-      // Single day all-day event
-      const formattedStart = dateFormatter.format(calendarEvent.start);
-      eventDayElement.textContent = formattedStart;
-      eventDayElement.parentElement.style.setProperty('display', '');
-      eventStartElement.parentElement.style.setProperty('display', 'none');
-      eventEndElement.parentElement.style.setProperty('display', 'none');
+    if (calendarEvent.allDay) {
+      if (calendarEvent.end - calendarEvent.start < 36 * 60 * 60 * 1000) {
+        // Single day all-day event
+
+        eventDayElement.textContent = dateFormatter.format(calendarEvent.start);
+        eventDayElement.parentElement.style.setProperty('display', '');
+        eventStartElement.parentElement.style.setProperty('display', 'none');
+        eventEndElement.parentElement.style.setProperty('display', 'none');
+      } else {
+        // All-day event spanning multiple days
+
+        // The end time is the start of the next day. We subtract a millisecond to end up with a time on the previous day.
+        const endDate = new Date(calendarEvent.end.getTime() - 1);
+
+        eventStartElement.textContent = dateFormatter.format(calendarEvent.start);
+        eventStartElement.parentElement.style.setProperty('display', '');
+        eventEndElement.textContent = dateFormatter.format(endDate);
+        eventEndElement.parentElement.style.setProperty('display', '');
+        eventDayElement.parentElement.style.setProperty('display', 'none');
+      }
     } else {
-      const formatter = (calendarEvent.allDay) ? dateFormatter : dateTimeFormatter;
-      const formattedStart = (calendarEvent.start) ? formatter.format(calendarEvent.start) : '';
-      const formattedEnd = (calendarEvent.end) ? formatter.format(calendarEvent.end) : '';
-      eventStartElement.textContent = formattedStart;
+      // Event with start and end time
+
+      // Parse dates from strings because fullCalendar seems to perform some unwanted time zone(?) adjustments on
+      // calendarEvent.start and calendarEvent.end.
+      const startDate = new Date(Date.parse(calendarEvent.startStr));
+      const endDate = new Date(Date.parse(calendarEvent.endStr));
+
+      eventStartElement.textContent = dateTimeFormatter.format(startDate);
       eventStartElement.parentElement.style.setProperty('display', '');
-      eventEndElement.textContent = formattedEnd;
+      eventEndElement.textContent = dateTimeFormatter.format(endDate);
       eventEndElement.parentElement.style.setProperty('display', '');
       eventDayElement.parentElement.style.setProperty('display', 'none');
     }
